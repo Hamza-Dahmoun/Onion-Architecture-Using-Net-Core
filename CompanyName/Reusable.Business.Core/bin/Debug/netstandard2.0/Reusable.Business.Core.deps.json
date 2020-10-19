@@ -24,6 +24,9 @@
         }
       },
       "Reusable.Data.Abstractions/1.0.0": {
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "Reusable.Data.Abstractions.dll": {}
         }
