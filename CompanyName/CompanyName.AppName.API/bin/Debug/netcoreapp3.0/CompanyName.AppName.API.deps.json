@@ -165,7 +165,6 @@
           "System.Collections.Immutable": "1.2.4.0",
           "System.Collections.NonGeneric": "4.1.1.0",
           "System.Collections.Specialized": "4.1.1.0",
-          "System.ComponentModel.Annotations": "4.3.0.0",
           "System.ComponentModel.DataAnnotations": "4.0.0.0",
           "System.ComponentModel": "4.0.3.0",
           "System.ComponentModel.EventBasedAsync": "4.1.1.0",
@@ -319,6 +318,17 @@
           "CompanyName.AppName.API.dll": {}
         }
       },
+      "System.ComponentModel.Annotations/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.1/System.ComponentModel.Annotations.dll": {
+            "assemblyVersion": "4.3.1.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        }
+      },
       "CompanyName.AppName.Business/1.0.0": {
         "dependencies": {
           "CompanyName.AppName.Domain": "1.0.0",
@@ -348,7 +358,8 @@
       },
       "CompanyName.AppName.Domain/1.0.0": {
         "dependencies": {
-          "Reusable.Domain.Core": "1.0.0"
+          "Reusable.Domain.Core": "1.0.0",
+          "System.ComponentModel.Annotations": "4.7.0"
         },
         "runtime": {
           "CompanyName.AppName.Domain.dll": {}
@@ -378,6 +389,26 @@
         },
         "compile": {
           "Reusable.Data.Abstractions.dll": {}
+        }
+      },
+      "Reusable.Data.Core/1.0.0": {
+        "dependencies": {
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "Reusable.Data.Core.dll": {}
+        },
+        "compile": {
+          "Reusable.Data.Core.dll": {}
+        }
+      },
+      "Reusable.Domain.Core/1.0.0": {
+        "runtime": {
+          "Reusable.Domain.Core.dll": {}
+        },
+        "compile": {
+          "Reusable.Domain.Core.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -1193,12 +1224,6 @@
       "System.Collections.Specialized/4.1.1.0": {
         "compile": {
           "System.Collections.Specialized.dll": {}
-        },
-        "compileOnly": true
-      },
-      "System.ComponentModel.Annotations/4.3.0.0": {
-        "compile": {
-          "System.ComponentModel.Annotations.dll": {}
         },
         "compileOnly": true
       },
@@ -2071,16 +2096,6 @@
           "WindowsBase.dll": {}
         },
         "compileOnly": true
-      },
-      "Reusable.Data.Core/1.0.0": {
-        "dependencies": {
-          "Reusable.Data.Abstractions": "1.0.0",
-          "Reusable.Domain.Core": "1.0.0"
-        },
-        "compileOnly": true
-      },
-      "Reusable.Domain.Core/1.0.0": {
-        "compileOnly": true
       }
     }
   },
@@ -2089,6 +2104,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "System.ComponentModel.Annotations/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
     },
     "CompanyName.AppName.Business/1.0.0": {
       "type": "project",
@@ -2111,6 +2133,16 @@
       "sha512": ""
     },
     "Reusable.Data.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reusable.Data.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reusable.Domain.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -2791,11 +2823,6 @@
       "sha512": ""
     },
     "System.Collections.Specialized/4.1.1.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.ComponentModel.Annotations/4.3.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3522,16 +3549,6 @@
     },
     "WindowsBase/4.0.0.0": {
       "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Reusable.Data.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Reusable.Domain.Core/1.0.0": {
-      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

@@ -29,3 +29,8 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Reusable.Data.Abstractions.pdb
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\CompanyName.AppName.API.csprojAssemblyReference.cache
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\CompanyName.AppName.API.csproj.CopyComplete
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Reusable.Data.Core.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Reusable.Domain.Core.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Reusable.Data.Core.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Reusable.Domain.Core.pdb

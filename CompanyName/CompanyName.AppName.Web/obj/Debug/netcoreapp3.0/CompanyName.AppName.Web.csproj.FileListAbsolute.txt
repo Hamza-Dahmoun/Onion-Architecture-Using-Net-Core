@@ -49,3 +49,4 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Data.Abstractions.pdb
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Data.Core.pdb
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Domain.Core.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll

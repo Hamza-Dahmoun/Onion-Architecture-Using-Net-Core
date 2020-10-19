@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aUfweQKBKYFdldy6ypyiyBXE1AGcS2OTUMHHRm6kdXkIX1Wv8IF97qShnrae4aMm83sMljB31A+Bn51DBzObng==",
+  "dgSpecHash": "QH1keMx484aiwF4UCzTv3kSMlWWW2QpoScNeBQBmIQnK2d1B3tHu7n81CKTrS+sqxeg+YNOIwdode4sGxkWX3A==",
   "success": true,
   "projectFilePath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Web\\CompanyName.AppName.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ham.dahmoun\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
