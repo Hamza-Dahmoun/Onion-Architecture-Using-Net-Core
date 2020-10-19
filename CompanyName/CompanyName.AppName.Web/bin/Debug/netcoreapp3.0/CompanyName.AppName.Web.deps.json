@@ -24,6 +24,11 @@
     ".NETCoreApp,Version=v3.0": {
       "CompanyName.AppName.Web/1.0.0": {
         "dependencies": {
+          "CompanyName.AppName.Business": "1.0.0",
+          "CompanyName.AppName.Data": "1.0.0",
+          "CompanyName.AppName.Domain": "1.0.0",
+          "Reusable.Business.Core": "1.0.0",
+          "Reusable.Data.Abstractions": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.0.0.0",
@@ -312,6 +317,87 @@
         },
         "compile": {
           "CompanyName.AppName.Web.dll": {}
+        }
+      },
+      "CompanyName.AppName.Business/1.0.0": {
+        "dependencies": {
+          "CompanyName.AppName.Domain": "1.0.0",
+          "Reusable.Business.Core": "1.0.0",
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "CompanyName.AppName.Business.dll": {}
+        },
+        "compile": {
+          "CompanyName.AppName.Business.dll": {}
+        }
+      },
+      "CompanyName.AppName.Data/1.0.0": {
+        "dependencies": {
+          "CompanyName.AppName.Domain": "1.0.0",
+          "Reusable.Data.Core": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "CompanyName.AppName.Data.dll": {}
+        },
+        "compile": {
+          "CompanyName.AppName.Data.dll": {}
+        }
+      },
+      "CompanyName.AppName.Domain/1.0.0": {
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "CompanyName.AppName.Domain.dll": {}
+        },
+        "compile": {
+          "CompanyName.AppName.Domain.dll": {}
+        }
+      },
+      "Reusable.Business.Core/1.0.0": {
+        "dependencies": {
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "Reusable.Business.Core.dll": {}
+        },
+        "compile": {
+          "Reusable.Business.Core.dll": {}
+        }
+      },
+      "Reusable.Data.Abstractions/1.0.0": {
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "Reusable.Data.Abstractions.dll": {}
+        },
+        "compile": {
+          "Reusable.Data.Abstractions.dll": {}
+        }
+      },
+      "Reusable.Data.Core/1.0.0": {
+        "dependencies": {
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "Reusable.Data.Core.dll": {}
+        },
+        "compile": {
+          "Reusable.Data.Core.dll": {}
+        }
+      },
+      "Reusable.Domain.Core/1.0.0": {
+        "runtime": {
+          "Reusable.Domain.Core.dll": {}
+        },
+        "compile": {
+          "Reusable.Domain.Core.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.0.0.0": {
@@ -2010,6 +2096,41 @@
   },
   "libraries": {
     "CompanyName.AppName.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyName.AppName.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyName.AppName.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CompanyName.AppName.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reusable.Business.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reusable.Data.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reusable.Data.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reusable.Domain.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -4,8 +4,12 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
-
   <ItemGroup>
+    <ProjectReference Include="..\CompanyName.AppName.Business\CompanyName.AppName.Business.csproj" />
+    <ProjectReference Include="..\CompanyName.AppName.Data\CompanyName.AppName.Data.csproj" />
+    <ProjectReference Include="..\CompanyName.AppName.Domain\CompanyName.AppName.Domain.csproj" />
+    <ProjectReference Include="..\Reusable.Business.Core\Reusable.Business.Core.csproj" />
+    <ProjectReference Include="..\Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

@@ -35,3 +35,17 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\CompanyName.AppName.Web.pdb
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\CompanyName.AppName.Web.genruntimeconfig.cache
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\CompanyName.AppName.Web.csproj.CopyComplete
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\CompanyName.AppName.Business.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\CompanyName.AppName.Data.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\CompanyName.AppName.Domain.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Business.Core.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Data.Abstractions.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Data.Core.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Domain.Core.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\CompanyName.AppName.Business.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\CompanyName.AppName.Data.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\CompanyName.AppName.Domain.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Business.Core.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Data.Abstractions.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Data.Core.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\Reusable.Domain.Core.pdb
