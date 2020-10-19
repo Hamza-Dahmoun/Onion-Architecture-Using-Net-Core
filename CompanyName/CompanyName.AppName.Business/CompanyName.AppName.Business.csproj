@@ -4,4 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CompanyName.AppName.Domain\CompanyName.AppName.Domain.csproj" />
+    <ProjectReference Include="..\Reusable.Business.Core\Reusable.Business.Core.csproj" />
+    <ProjectReference Include="..\Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\Reusable.Domain.Core\Reusable.Domain.Core.csproj" />
+  </ItemGroup>
+
 </Project>
