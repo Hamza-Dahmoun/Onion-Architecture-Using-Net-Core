@@ -25,6 +25,56 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "CompanyName.AppName.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CompanyName.AppName.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompanyName.AppName.Domain.dll": {}
+        }
+      },
+      "Reusable.Data.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reusable.Data.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reusable.Data.Abstractions.dll": {}
+        }
+      },
+      "Reusable.Data.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reusable.Data.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reusable.Data.Core.dll": {}
+        }
+      },
+      "Reusable.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Reusable.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reusable.Domain.Core.dll": {}
+        }
       }
     }
   },
@@ -172,11 +222,34 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "CompanyName.AppName.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CompanyName.AppName.Domain/CompanyName.AppName.Domain.csproj",
+      "msbuildProject": "../CompanyName.AppName.Domain/CompanyName.AppName.Domain.csproj"
+    },
+    "Reusable.Data.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Reusable.Data.Abstractions/Reusable.Data.Abstractions.csproj",
+      "msbuildProject": "../Reusable.Data.Abstractions/Reusable.Data.Abstractions.csproj"
+    },
+    "Reusable.Data.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reusable.Data.Core/Reusable.Data.Core.csproj",
+      "msbuildProject": "../Reusable.Data.Core/Reusable.Data.Core.csproj"
+    },
+    "Reusable.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reusable.Domain.Core/Reusable.Domain.Core.csproj",
+      "msbuildProject": "../Reusable.Domain.Core/Reusable.Domain.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "CompanyName.AppName.Domain >= 1.0.0",
+      "NETStandard.Library >= 2.0.3",
+      "Reusable.Data.Core >= 1.0.0",
+      "Reusable.Domain.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -204,7 +277,17 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj"
+            },
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Core\\Reusable.Data.Core.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Core\\Reusable.Data.Core.csproj"
+            },
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Domain.Core\\Reusable.Domain.Core.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Domain.Core\\Reusable.Domain.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
