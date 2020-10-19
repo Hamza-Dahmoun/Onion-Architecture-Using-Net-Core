@@ -26,6 +26,9 @@
         }
       },
       "CompanyName.AppName.Domain/1.0.0": {
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
         "runtime": {
           "CompanyName.AppName.Domain.dll": {}
         }

@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Reusable.Domain.Core\Reusable.Domain.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -94,7 +94,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Domain.Core\\Reusable.Domain.Core.csproj": {
+                "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Domain.Core\\Reusable.Domain.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
