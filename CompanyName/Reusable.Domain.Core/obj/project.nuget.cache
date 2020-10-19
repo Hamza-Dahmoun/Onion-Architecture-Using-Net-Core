@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xCAbAHBHith10n8g32HoxwDuocVGash/+e9Tt4vyxMdTrIQGmPuiXPsHES8Vgp2v2x9MDDwwo6ihpXmaxCCX/g==",
+  "success": true,
+  "projectFilePath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Domain.Core\\Reusable.Domain.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ham.dahmoun\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ham.dahmoun\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
