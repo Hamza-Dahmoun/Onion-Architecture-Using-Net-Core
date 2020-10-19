@@ -1,0 +1,9 @@
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\bin\Debug\netstandard2.0\CompanyName.AppName.Business.deps.json
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\bin\Debug\netstandard2.0\CompanyName.AppName.Business.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\bin\Debug\netstandard2.0\CompanyName.AppName.Business.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\obj\Debug\netstandard2.0\CompanyName.AppName.Business.csprojAssemblyReference.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\obj\Debug\netstandard2.0\CompanyName.AppName.Business.AssemblyInfoInputs.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\obj\Debug\netstandard2.0\CompanyName.AppName.Business.AssemblyInfo.cs
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\obj\Debug\netstandard2.0\CompanyName.AppName.Business.csproj.CoreCompileInputs.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\obj\Debug\netstandard2.0\CompanyName.AppName.Business.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Business\obj\Debug\netstandard2.0\CompanyName.AppName.Business.pdb
