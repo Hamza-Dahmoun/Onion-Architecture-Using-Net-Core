@@ -1,11 +1,149 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    ".NETCoreApp,Version=v3.0": {
+      "CompanyName.AppName.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CompanyName.AppName.Domain": "1.0.0",
+          "Reusable.Business.Core": "1.0.0",
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CompanyName.AppName.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompanyName.AppName.Business.dll": {}
+        }
+      },
+      "CompanyName.AppName.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "CompanyName.AppName.Domain": "1.0.0",
+          "Reusable.Data.Core": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CompanyName.AppName.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompanyName.AppName.Data.dll": {}
+        }
+      },
+      "CompanyName.AppName.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CompanyName.AppName.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CompanyName.AppName.Domain.dll": {}
+        }
+      },
+      "Reusable.Business.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reusable.Business.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reusable.Business.Core.dll": {}
+        }
+      },
+      "Reusable.Data.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reusable.Data.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reusable.Data.Abstractions.dll": {}
+        }
+      },
+      "Reusable.Data.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Reusable.Data.Abstractions": "1.0.0",
+          "Reusable.Domain.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reusable.Data.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reusable.Data.Core.dll": {}
+        }
+      },
+      "Reusable.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Reusable.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reusable.Domain.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CompanyName.AppName.Business/1.0.0": {
+      "type": "project",
+      "path": "../CompanyName.AppName.Business/CompanyName.AppName.Business.csproj",
+      "msbuildProject": "../CompanyName.AppName.Business/CompanyName.AppName.Business.csproj"
+    },
+    "CompanyName.AppName.Data/1.0.0": {
+      "type": "project",
+      "path": "../CompanyName.AppName.Data/CompanyName.AppName.Data.csproj",
+      "msbuildProject": "../CompanyName.AppName.Data/CompanyName.AppName.Data.csproj"
+    },
+    "CompanyName.AppName.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CompanyName.AppName.Domain/CompanyName.AppName.Domain.csproj",
+      "msbuildProject": "../CompanyName.AppName.Domain/CompanyName.AppName.Domain.csproj"
+    },
+    "Reusable.Business.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reusable.Business.Core/Reusable.Business.Core.csproj",
+      "msbuildProject": "../Reusable.Business.Core/Reusable.Business.Core.csproj"
+    },
+    "Reusable.Data.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Reusable.Data.Abstractions/Reusable.Data.Abstractions.csproj",
+      "msbuildProject": "../Reusable.Data.Abstractions/Reusable.Data.Abstractions.csproj"
+    },
+    "Reusable.Data.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reusable.Data.Core/Reusable.Data.Core.csproj",
+      "msbuildProject": "../Reusable.Data.Core/Reusable.Data.Core.csproj"
+    },
+    "Reusable.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reusable.Domain.Core/Reusable.Domain.Core.csproj",
+      "msbuildProject": "../Reusable.Domain.Core/Reusable.Domain.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    ".NETCoreApp,Version=v3.0": [
+      "CompanyName.AppName.Business >= 1.0.0",
+      "CompanyName.AppName.Data >= 1.0.0",
+      "CompanyName.AppName.Domain >= 1.0.0",
+      "Reusable.Business.Core >= 1.0.0",
+      "Reusable.Data.Abstractions >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\": {}
@@ -32,7 +170,23 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Business\\CompanyName.AppName.Business.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Business\\CompanyName.AppName.Business.csproj"
+            },
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Data\\CompanyName.AppName.Data.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Data\\CompanyName.AppName.Data.csproj"
+            },
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj"
+            },
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Business.Core\\Reusable.Business.Core.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Business.Core\\Reusable.Business.Core.csproj"
+            },
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Abstractions\\Reusable.Data.Abstractions.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Abstractions\\Reusable.Data.Abstractions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
