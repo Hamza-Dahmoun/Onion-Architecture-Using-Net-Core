@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyName.AppName.API", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusable.Data.Abstractions", "Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj", "{C5B61CCB-D29A-407B-87EF-8B2B2A89DF25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusable.Data.Core", "Reusable.Data.Core\Reusable.Data.Core.csproj", "{BF9EFACB-00F3-4943-993A-49C4EC61C8E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{C5B61CCB-D29A-407B-87EF-8B2B2A89DF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5B61CCB-D29A-407B-87EF-8B2B2A89DF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5B61CCB-D29A-407B-87EF-8B2B2A89DF25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9EFACB-00F3-4943-993A-49C4EC61C8E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9EFACB-00F3-4943-993A-49C4EC61C8E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9EFACB-00F3-4943-993A-49C4EC61C8E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9EFACB-00F3-4943-993A-49C4EC61C8E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
