@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Reusable.Domain.Core;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace CompanyName.AppName.Domain.Entities
 {
-    public class Indenisation
+    public class Indenisation:IEntity<Guid>
     {
         [Required(ErrorMessage="Id is required")]
         public Guid Id { get; set; }
