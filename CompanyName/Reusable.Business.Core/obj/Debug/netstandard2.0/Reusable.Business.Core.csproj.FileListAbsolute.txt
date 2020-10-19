@@ -6,3 +6,9 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\obj\Debug\netstandard2.0\Reusable.Business.Core.csproj.CoreCompileInputs.cache
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\obj\Debug\netstandard2.0\Reusable.Business.Core.dll
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\obj\Debug\netstandard2.0\Reusable.Business.Core.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\bin\Debug\netstandard2.0\Reusable.Data.Abstractions.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\bin\Debug\netstandard2.0\Reusable.Domain.Core.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\bin\Debug\netstandard2.0\Reusable.Data.Abstractions.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\bin\Debug\netstandard2.0\Reusable.Domain.Core.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\obj\Debug\netstandard2.0\Reusable.Business.Core.csprojAssemblyReference.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Business.Core\obj\Debug\netstandard2.0\Reusable.Business.Core.csproj.CopyComplete
