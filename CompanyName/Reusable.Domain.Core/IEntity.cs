@@ -7,6 +7,12 @@ namespace Reusable.Domain.Core
     public interface IEntity<TKey>
     {
         TKey Id { get; set; }
+
+        /*
+         Mentor:
+        Note: IEntity<TKey> acts as a contract with domain entities to support different types of
+        primary key named Id.
+         */
     }
 
     public interface IEntity : IEntity<Guid>
