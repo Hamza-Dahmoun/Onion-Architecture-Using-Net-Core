@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\CompanyName.AppName.Domain\CompanyName.AppName.Domain.csproj" />
     <ProjectReference Include="..\Reusable.Data.Core\Reusable.Data.Core.csproj" />
     <ProjectReference Include="..\Reusable.Domain.Core\Reusable.Domain.Core.csproj" />
