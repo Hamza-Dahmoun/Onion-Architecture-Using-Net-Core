@@ -3,7 +3,6 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\bin\Debug\netstandard2.0\Reusable.Domain.Core.pdb
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\obj\Debug\netstandard2.0\Reusable.Domain.Core.AssemblyInfoInputs.cache
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\obj\Debug\netstandard2.0\Reusable.Domain.Core.AssemblyInfo.cs
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\obj\Debug\netstandard2.0\Reusable.Domain.Core.csproj.CoreCompileInputs.cache
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\obj\Debug\netstandard2.0\Reusable.Domain.Core.dll
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\obj\Debug\netstandard2.0\Reusable.Domain.Core.pdb
-D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\obj\Debug\netstandard2.0\Reusable.Domain.Core.csprojAssemblyReference.cache
-D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\Reusable.Domain.Core\obj\Debug\netstandard2.0\Reusable.Domain.Core.csproj.CoreCompileInputs.cache
