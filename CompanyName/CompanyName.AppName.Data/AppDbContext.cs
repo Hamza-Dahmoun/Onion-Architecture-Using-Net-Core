@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CompanyName.AppName.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 
@@ -23,5 +24,7 @@ namespace CompanyName.AppName.Data
             optionsBuilder.UseSqlServer("Server=.;Database=AppDb;Integrated Security=true;");
             base.OnConfiguring(optionsBuilder);
         }
+
+        public virtual DbSet<Person> Person { get; set; }
     }
 }
