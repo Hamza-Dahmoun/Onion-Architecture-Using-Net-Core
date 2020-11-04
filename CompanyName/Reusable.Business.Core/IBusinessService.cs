@@ -6,6 +6,7 @@ using System.Text;
 
 namespace Reusable.Business.Core
 {
+    //This interface contains methods signatures that represent the minimum that each Business service must implement
     public interface IBusinessService<T, TKey> where T: class, IEntity<TKey>
     {
         T GetById(TKey id, params Expression<Func<T, object>>[] navigationPropertiesToLoad);
