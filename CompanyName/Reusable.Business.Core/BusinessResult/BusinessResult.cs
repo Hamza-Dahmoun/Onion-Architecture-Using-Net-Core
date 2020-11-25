@@ -21,6 +21,7 @@ namespace Reusable.Business.Core.BusinessResult
         public bool Succeeded { get; protected set; }
         public static BusinessResult Success 
         {
+            //this is a stic member to be assigned to a businessResult after doing an operation successfully
             get
             {
                 var result = new BusinessResult { Succeeded = true };

@@ -52,7 +52,35 @@ namespace Reusable.Business.Core
 
         public BusinessResult.BusinessResult Add(T entity)
         {
-            throw new NotImplementedException();
+            BusinessResult.BusinessResult businessResult;
+            try
+            {
+                OnAdding(entity);
+                _repository.Add(entity);
+                if (_unitOfWork.SaveChanges() == 0)
+                {
+                    throw new DataNotUpdatedException("Operation failed!");
+                }
+                OnAdded(entity);
+                businessResult = BusinessResult.BusinessResult.Success;
+            }
+            catch (DataNotUpdatedException E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = E.Message, MessageType = MessageType.Error });
+            }
+            catch (BusinessException E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = E.Message, MessageType = MessageType.Warning });
+            }
+            catch (Exception E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = "Error!", MessageType = MessageType.Error });
+            }
+            return businessResult;
+
         }
 
         public BusinessResult.BusinessResult Delete(T entity)
