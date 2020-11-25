@@ -64,5 +64,30 @@ namespace Reusable.Business.Core
         {
             throw new NotImplementedException();
         }
+
+        protected virtual void OnAdding(T entity)
+        {
+
+        }
+        protected virtual void OnAdded(T entity)
+        {
+
+        }
+        protected virtual void OnUpdating(T entity)
+        {
+
+        }
+        protected virtual void OnUpdated(T entity)
+        {
+
+        }
+        protected virtual void OnDeleting(T entity)
+        {
+
+        }
+        protected virtual void OnDeleted(T entity)
+        {
+
+        }
     }
 }
