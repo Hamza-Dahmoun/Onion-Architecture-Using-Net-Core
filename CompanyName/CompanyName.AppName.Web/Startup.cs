@@ -10,6 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Reusable.Data.Abstractions;
+using Reusable.Data.Core;
 
 namespace CompanyName.AppName.Web
 {
@@ -30,6 +32,9 @@ namespace CompanyName.AppName.Web
             //registering db context services, note that the connection string is the one inside appsettings.json file
             services.AddScoped<DbContext, AppDbContext>();
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings")));
+
+            //registering unitOfWork services
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
