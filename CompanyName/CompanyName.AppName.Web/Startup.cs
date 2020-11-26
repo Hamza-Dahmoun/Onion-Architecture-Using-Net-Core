@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CompanyName.AppName.Business;
 using CompanyName.AppName.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Reusable.Business.Core;
 using Reusable.Data.Abstractions;
 using Reusable.Data.Core;
 
@@ -38,6 +40,10 @@ namespace CompanyName.AppName.Web
 
             //registering IRepository services using GenericRepository because all other repositories inherit from it
             services.AddTransient(typeof(IRepository<,>), typeof(GenericRepository<,>));
+
+            //registering businessServices 
+            services.AddTransient(typeof(GenericBusinessService<,>));
+            services.AddTransient<PersonBusinessService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
