@@ -20,8 +20,11 @@ namespace CompanyName.AppName.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //---> We don't need to pass the connection string anymore because we already passed it when registering
+            //db context services inside Startup file<---
+
             //lets pass the connection string hard coded
-            optionsBuilder.UseSqlServer("Server=.;Database=AppDb;Integrated Security=true;");
+            //optionsBuilder.UseSqlServer("Server=.;Database=AppDb;Integrated Security=true;");
             base.OnConfiguring(optionsBuilder);
         }
 
