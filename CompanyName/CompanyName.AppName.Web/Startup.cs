@@ -35,6 +35,9 @@ namespace CompanyName.AppName.Web
 
             //registering unitOfWork services
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            //registering IRepository services using GenericRepository because all other repositories inherit from it
+            services.AddTransient(typeof(IRepository<,>), typeof(GenericRepository<,>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
