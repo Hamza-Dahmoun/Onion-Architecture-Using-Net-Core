@@ -119,7 +119,34 @@ namespace Reusable.Business.Core
 
         public BusinessResult.BusinessResult Update(T entity)
         {
-            throw new NotImplementedException();
+            BusinessResult.BusinessResult businessResult;
+            try
+            {
+                OnDeleting(entity);
+                _repository.Update(entity);
+                if (_unitOfWork.SaveChanges() == 0)
+                {
+                    throw new DataNotUpdatedException("Operation failed!");
+                }
+                businessResult = BusinessResult.BusinessResult.Success;
+                OnDeleted(entity);
+            }
+            catch(DataNotUpdatedException E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = E.Message, MessageType = MessageType.Error});
+            }
+            catch (BusinessException E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = E.Message, MessageType = MessageType.Warning });
+            }
+            catch (Exception E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = "Error", MessageType = MessageType.Error });
+            }
+            return businessResult;
         }
 
         protected virtual void OnAdding(T entity)
