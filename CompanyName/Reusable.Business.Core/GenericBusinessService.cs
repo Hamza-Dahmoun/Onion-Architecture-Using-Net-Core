@@ -50,8 +50,10 @@ namespace Reusable.Business.Core
             return _repository.GetSingle(predicate, navigationPropertiesToLoad);
         }
 
+        //Note that inside Add()/Delete()/Update() methods DataNotUpdatedException is an Error whereas BusinessException is a Warning
+
         public BusinessResult.BusinessResult Add(T entity)
-        {
+        {            
             BusinessResult.BusinessResult businessResult;
             try
             {
@@ -85,7 +87,34 @@ namespace Reusable.Business.Core
 
         public BusinessResult.BusinessResult Delete(T entity)
         {
-            throw new NotImplementedException();
+            BusinessResult.BusinessResult businessResult;
+            try
+            {
+                OnDeleting(entity);
+                _repository.Delete(entity);
+                if (_unitOfWork.SaveChanges() == 0)
+                {
+                    throw new DataNotUpdatedException("Operation failed!");
+                }
+                businessResult = BusinessResult.BusinessResult.Success;
+                OnDeleted(entity);
+            }
+            catch(DataNotUpdatedException E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = E.Message, MessageType = MessageType.Error});
+            }
+            catch (BusinessException E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = E.Message, MessageType = MessageType.Warning});
+            }
+            catch (Exception E)
+            {
+                businessResult = new BusinessResult.BusinessResult();
+                businessResult.Messages.Add(new BusinessResult.MessageResult { Message = "Error!", MessageType = MessageType.Error });
+            }
+            return businessResult;
         }
 
         public BusinessResult.BusinessResult Update(T entity)
