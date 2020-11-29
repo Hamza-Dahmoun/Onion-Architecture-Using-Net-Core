@@ -21,6 +21,6 @@ namespace CompanyName.AppName.Domain.Entities
 
         [Display(Name = "Description")]
         [Required(ErrorMessage = "RequiredMessage"), StringLength(256, ErrorMessage = "StringLengthMessage")]
-        public string Designation { get; set; }
+        public string Description { get; set; }
     }
 }
