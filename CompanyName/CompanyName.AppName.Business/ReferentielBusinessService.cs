@@ -1,13 +1,14 @@
 ﻿using CompanyName.AppName.Domain.Entities;
 using Reusable.Business.Core;
 using Reusable.Data.Abstractions;
+using Reusable.Domain.Core;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CompanyName.AppName.Business
 {
-    public class ReferentielBusinessService : GenericBusinessService<Referentiel, Guid>
+    public class ReferentielBusinessService<T, TKey> : GenericBusinessService<T, TKey> where T : Referentiel, IEntity<TKey>
     {
         public ReferentielBusinessService(IUnitOfWork unitOfWork): base(unitOfWork)
         {
@@ -15,7 +16,7 @@ namespace CompanyName.AppName.Business
         }
 
 
-        protected override void OnAdding(Referentiel entity)
+        protected override void OnAdding(T entity)
         {
             //below is a business rule to ensure that it doesn't exist another entitty with the same Code or Description
             if (_repository.Count(x => x.Code == entity.Code || x.Description == entity.Description) > 0)
@@ -25,7 +26,7 @@ namespace CompanyName.AppName.Business
             base.OnAdding(entity);
         }
 
-        protected override void OnUpdating(Referentiel entity)
+        protected override void OnUpdating(T entity)
         {
             //below is a business rule to ensure that it doesn't exist another entitty with the same Code or Description
             if (_repository.Count(x => x.Code == entity.Code || x.Description == entity.Description) > 0)
