@@ -47,5 +47,14 @@ namespace CompanyName.AppName.Web.Controllers
 
             return View(model);
         }
+
+        public virtual ActionResult Details(TKey id)
+        {
+            var model = _referentielBusinessService.GetById(id);
+
+            if (model == null)
+                return NotFound();
+            else return View(model);
+        }
     }
 }
