@@ -1,0 +1,7 @@
+﻿@*THIS PARTIAL VIEW IS USED TO DISPLAY BOOTSTRAP ALERTS WHEN AN ACTION IS A COMPLETED
+    ITS MESSAGE SOURCE IS THE STATIC MEMBER BusinessResultExtensions.cs/ToBootstrapAlerts()*@
+@if (ViewData["Message"] != null)
+    @Html.Raw(ViewData["Message"])
+
+@if (TempData["Message"] != null)
+    @Html.Raw(TempData["Message"])
