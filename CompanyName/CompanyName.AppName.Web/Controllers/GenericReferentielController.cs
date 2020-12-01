@@ -84,6 +84,30 @@ namespace CompanyName.AppName.Web.Controllers
             return View(model);
         }
 
+        // GET: Generic/Edit/5
+        public virtual ActionResult Edit(TKey id)
+        {
+            var model = _referentielBusinessService.GetById(id);
+            if (model == null)
+            {
+                return NotFound();
+            }
+            return View(model);
+        }
+
+        // POST: Generic/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public virtual ActionResult Edit(T model)
+        {
+            if (ModelState.IsValid)
+            {
+                var businessResult = _referentielBusinessService.Update(model);
+
+                TempData["Message"] = businessResult.ToBootstrapAlerts();
+            }
+            return View(model);
+        }
 
     }
 }
