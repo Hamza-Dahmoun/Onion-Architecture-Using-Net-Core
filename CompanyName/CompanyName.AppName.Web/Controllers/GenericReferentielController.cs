@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CompanyName.AppName.Business;
 using CompanyName.AppName.Domain.Entities;
+using CompanyName.AppName.Web.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Reusable.Domain.Core;
 
@@ -22,6 +23,7 @@ namespace CompanyName.AppName.Web.Controllers
             _referentielBusinessService = referentielBusinessService;
         }
 
+        // GET: Generic
         public virtual ActionResult Index(string search, int page =1, int pageSize=10)
         {
             PagedResult<T> model;
@@ -48,6 +50,7 @@ namespace CompanyName.AppName.Web.Controllers
             return View(model);
         }
 
+        // GET: Generic/Details/5
         public virtual ActionResult Details(TKey id)
         {
             var model = _referentielBusinessService.GetById(id);
@@ -56,5 +59,31 @@ namespace CompanyName.AppName.Web.Controllers
                 return NotFound();
             else return View(model);
         }
+
+        public virtual ActionResult Create()
+        {
+            return View();
+        }
+
+        //Post: Generic/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public virtual ActionResult Create(T model)
+        {
+            if (ModelState.IsValid)
+            {
+                var businessResult = _referentielBusinessService.Add(model);
+
+                if (businessResult.Succeeded)
+                {
+                    TempData["Message"] = businessResult.ToBootstrapAlerts();
+
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            return View(model);
+        }
+
+
     }
 }
