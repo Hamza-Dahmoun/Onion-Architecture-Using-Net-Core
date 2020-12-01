@@ -44,6 +44,7 @@ namespace CompanyName.AppName.Web
             //registering businessServices 
             services.AddTransient(typeof(GenericBusinessService<,>));
             services.AddTransient<PersonBusinessService>();
+            services.AddTransient(typeof(ReferentielBusinessService<,>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
