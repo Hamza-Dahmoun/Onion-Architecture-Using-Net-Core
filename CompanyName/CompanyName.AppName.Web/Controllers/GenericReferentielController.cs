@@ -105,6 +105,8 @@ namespace CompanyName.AppName.Web.Controllers
                 var businessResult = _referentielBusinessService.Update(model);
 
                 TempData["Message"] = businessResult.ToBootstrapAlerts();
+
+                return RedirectToAction(nameof(Index));
             }
             return View(model);
         }
