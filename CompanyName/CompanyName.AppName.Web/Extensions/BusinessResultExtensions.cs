@@ -18,7 +18,7 @@ namespace CompanyName.AppName.Web.Extensions
             StringBuilder sb = new StringBuilder();
             foreach (var msg in businessResult.Messages)
             {
-                sb.AppendFormat("<div class='alert alert-{0}' role='alert'>{1}</div>", msg.MessageType==Reusable.Business.Core.MessageType.Error?"danger":msg.MessageType.ToString().ToLower(),msg.Message);
+                sb.AppendFormat("<div class='alert alert-{0} alert-dismissible fade show' role='alert'>{1} <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>", msg.MessageType==Reusable.Business.Core.MessageType.Error?"danger":msg.MessageType.ToString().ToLower(),msg.Message);
             }
             return sb.ToString();
         }
