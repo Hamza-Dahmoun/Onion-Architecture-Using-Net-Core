@@ -109,5 +109,31 @@ namespace CompanyName.AppName.Web.Controllers
             return View(model);
         }
 
+        // GET: Generic/Delete/5
+        public virtual ActionResult Delete(TKey id)
+        {
+            var model = _referentielBusinessService.GetById(id);
+            if (model == null)
+            {
+                return NotFound();
+            }
+            return View(model);
+        }
+
+        // POST: Generic/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public virtual ActionResult Delete(T model)
+        {
+            var businessResult = _referentielBusinessService.Delete(model);
+
+            if (businessResult.Succeeded)
+            {
+                TempData["Message"] = businessResult.ToBootstrapAlerts();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(model);
+        }
     }
 }
