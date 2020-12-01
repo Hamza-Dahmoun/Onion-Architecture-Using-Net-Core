@@ -169,3 +169,4 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Wilaya\Create.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Wilaya\Delete.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Wilaya\Edit.cshtml.g.cs
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Wilaya\Details.cshtml.g.cs
