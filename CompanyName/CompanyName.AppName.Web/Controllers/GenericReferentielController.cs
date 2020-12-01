@@ -34,7 +34,7 @@ namespace CompanyName.AppName.Web.Controllers
             if (pageSize > 50)
                 pageSize = 50;
 
-            if (string.IsNullOrEmpty(search))
+            if (!string.IsNullOrEmpty(search))
             {
                 model = _referentielBusinessService.GetAllFilteredPaged(x => x.Code.StartsWith(search) || x.Description.Contains(search),
                     "Code", (page-1)*pageSize, pageSize);
