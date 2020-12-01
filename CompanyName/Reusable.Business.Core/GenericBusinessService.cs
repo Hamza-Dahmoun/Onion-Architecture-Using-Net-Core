@@ -42,7 +42,7 @@ namespace Reusable.Business.Core
 
         public T GetById(TKey id, params Expression<Func<T, object>>[] navigationPropertiesToLoad)
         {
-            return _repository.GetSingle(x => x.Id.Equals(id), navigationPropertiesToLoad);
+            return _repository.GetById(id);
         }
 
         public T GetSingle(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] navigationPropertiesToLoad)
