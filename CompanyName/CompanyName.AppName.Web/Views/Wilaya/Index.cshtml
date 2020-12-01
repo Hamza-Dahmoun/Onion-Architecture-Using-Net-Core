@@ -46,4 +46,38 @@
         </tr>
 }
     </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">
+                @{ 
+                    int totalPages = (Model.TotalCount / Model.PageSize) + 1;
+                    bool previousEnabled = Model.Page - 1 > 0;
+                    bool nextEnabled = Model.Page < totalPages;
+                }
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        @if (previousEnabled)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-action="Index" asp-route-page="@(Model.Page-1)" asp-route-search="@ViewBag.search">Previous</a>
+                            </li>
+                        }
+                        @if (totalPages > 0)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-action="Index" asp-route-page="@(Model.Page)" asp-route-search="@ViewBag.search">@(Model.Page)</a>
+                            </li>
+                        }
+                        @if (nextEnabled)
+                        {
+                            <li class="page-item">
+                                <a class="page-link" asp-action="Index" asp-route-page="@(Model.Page+1)" asp-route-search="@ViewBag.search">Next</a>
+                            </li>
+                        }
+                    </ul>
+                </nav>
+            </td>
+        </tr>
+    </tfoot>
 </table>
