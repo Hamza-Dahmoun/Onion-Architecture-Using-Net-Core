@@ -29,5 +29,7 @@ namespace CompanyName.AppName.Data
         }
 
         public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<Wilaya> Wilaya { get; set; }
+        public virtual DbSet<Commune> Commune { get; set; }
     }
 }

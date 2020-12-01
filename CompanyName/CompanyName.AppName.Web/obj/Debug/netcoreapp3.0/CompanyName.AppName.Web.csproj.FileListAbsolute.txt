@@ -91,3 +91,4 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_fontawesome.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_select2Script.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_select2Style.cshtml.g.cs
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\_Message.cshtml.g.cs

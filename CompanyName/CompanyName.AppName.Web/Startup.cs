@@ -33,7 +33,7 @@ namespace CompanyName.AppName.Web
 
             //registering db context services, note that the connection string is the one inside appsettings.json file
             services.AddScoped<DbContext, AppDbContext>();
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings")));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AppDbConnection")));
 
             //registering unitOfWork services
             services.AddScoped<IUnitOfWork, UnitOfWork>();
