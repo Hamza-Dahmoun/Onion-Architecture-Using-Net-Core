@@ -1,11 +1,12 @@
 ﻿@model Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.Commune>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "List of municipalties";
 }
 
-<h1>Index</h1>
-
+<h1>@ViewData["Title"]</h1>
+<partial name="_Message" />
+<partial name="_datatablesStyle" />
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -25,23 +26,57 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Items) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Code)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            @*<td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>*@
-        </tr>
-}
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                @*<td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>*@
+            </tr>
+        }
     </tbody>
 </table>
+<partial name="_datatablesScript" />
+<script>
+    $(function () {
+        initDataTable("table", "@Url.Action("DataTable")")
+    });
+
+    function initDataTable(selector, url) {
+
+           var dtTable =  $(selector).DataTable({
+            "processing": true,
+            "serverSide": true,
+            "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+            "ajax": {
+                url: url,
+                  type: 'POST'
+                },
+            "columns":
+            [
+                { "data": "id", "visible": false, "searchable": false },
+                { "data": "code", "visible": true, "searchable": false },
+                { "data": "description", "visible": true, "searchable": false },
+                { "data": null, "searchable": false, "sortable": false,
+                  "render": function (data, type, row, meta){
+                      var markup =
+                        "<a class='btn btn-secondary btn-sm' href=" + '@Url.Action("Edit")/' + row.id + "><i class='fa fa-pencil-alt'></i></a>" + " " +
+                        "<a class='btn btn-danger btn-sm' href=" + '@Url.Action("Delete")/' + row.id +"><i class='fa fa-trash'></i></a>";
+                          return markup;
+                        }
+                    }
+            ],
+            });
+        }
+</script>
