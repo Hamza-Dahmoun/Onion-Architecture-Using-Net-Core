@@ -15,9 +15,6 @@ namespace CompanyName.AppName.Web.Controllers
         {
             _wilayaBusinessService = wilayaBusinessService;
         }
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
     }
 }
