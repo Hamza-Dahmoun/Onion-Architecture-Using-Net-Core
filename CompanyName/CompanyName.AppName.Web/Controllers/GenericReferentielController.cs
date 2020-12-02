@@ -139,6 +139,24 @@ namespace CompanyName.AppName.Web.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public virtual IActionResult DataTable(DataTableAjaxModel model)
+        {
+            GetDataTableParameters(model, out string search, out string orderBy, out int startRowIndex, out int maxRows);
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                var result = _referentielBusinessService.GetAllFilteredPaged(x => x.Code.StartsWith(search) || x.Description.Contains(search),
+                    orderBy, startRowIndex, maxRows);
+                return Json(new JQueryDataTableRetunedData<T> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items });
+            }
+            else
+            {
+                var result = _referentielBusinessService.GetAllPaged(orderBy, startRowIndex,maxRows);
+                return Json(new JQueryDataTableRetunedData<T> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data=result.Items});
+            }
+        }
+
         protected static void GetDataTableParameters(DataTableAjaxModel model, out string search, out string orderBy, out int startRowIndex, out int maxRows)
         {
             maxRows = model.length;
