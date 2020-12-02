@@ -7,6 +7,7 @@ using CompanyName.AppName.Domain.Entities;
 using CompanyName.AppName.Web.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Reusable.Domain.Core;
+using CompanyName.AppName.Web.Models;
 
 namespace CompanyName.AppName.Web.Controllers
 {
@@ -136,6 +137,35 @@ namespace CompanyName.AppName.Web.Controllers
             }
 
             return View(model);
+        }
+
+        protected static void GetDataTableParameters(DataTableAjaxModel model, out string search, out string orderBy, out int startRowIndex, out int maxRows)
+        {
+            maxRows = model.length;
+            startRowIndex = model.start;
+            string sortBy = "", sortDir = "";
+
+            if (model.order != null)
+            {
+                // in this example we just default sort on the 1st column
+                sortBy = model.columns[model.order[0].column].data;
+                sortDir = model.order[0].direction.ToLower();
+                orderBy = sortBy + " " + sortDir;
+            }
+            else
+            {
+                orderBy = "";
+            }
+
+            if (model.search.value != null)
+            {
+                search = model.search.value;
+            }
+            else
+            {
+                search = "";
+            }
+
         }
     }
 }

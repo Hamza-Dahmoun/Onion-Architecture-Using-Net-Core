@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CompanyName.AppName.Web.Models
 {
-    public class DatatableAjaxModel
+    public class DataTableAjaxModel
     {
         public int draw { get; set; }
         public int start { get; set; }
