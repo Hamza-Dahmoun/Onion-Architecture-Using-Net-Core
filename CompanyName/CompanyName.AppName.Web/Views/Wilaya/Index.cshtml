@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "List of wilayas";
 }
-
+<partial name="_datatablesStyle"/>
 <partial name="_Message" />
 <h1>@ViewData["Title"]</h1>
 <hr/>
@@ -82,3 +82,9 @@
         </tr>
     </tfoot>
 </table>
+<partial name="_datatablesScript" />
+<script>
+    $(function () {
+        $("table").DataTable();
+    })
+</script>
