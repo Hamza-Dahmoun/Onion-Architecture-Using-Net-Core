@@ -173,5 +173,10 @@ namespace Reusable.Business.Core
         {
 
         }
+
+        public virtual Expression<Func<T, object>>[] GetDefaultLoadProperties()
+        {
+            return Array.Empty<Expression<Func<T, object>>>();
+        }
     }
 }
