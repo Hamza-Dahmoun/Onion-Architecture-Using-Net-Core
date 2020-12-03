@@ -60,5 +60,55 @@ namespace CompanyName.AppName.API.Controllers
 
             return result;
         }
+
+        [HttpPost]
+        [Route("datatable")]
+        public JQueryDataTableRetunedData<T> DataTable([FromBody] DataTableAjaxModel model)
+        {
+
+            GetDataTableParameters(model, out string search, out string orderBy, out int startRowIndex, out int maxRows);
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                var result = _referentielBusinessService.GetAllFilteredPaged(x => x.Code.StartsWith(search) || x.Description.Contains(search),
+                    orderBy, startRowIndex, maxRows, _referentielBusinessService.GetDefaultLoadProperties());
+                return new JQueryDataTableRetunedData<T> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items };
+            }
+            else
+            {
+                var result = _referentielBusinessService.GetAllPaged(orderBy, startRowIndex, maxRows, _referentielBusinessService.GetDefaultLoadProperties());
+
+                return new JQueryDataTableRetunedData<T> { draw = model.draw, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items };
+            }
+        }
+
+        protected static void GetDataTableParameters(DataTableAjaxModel model, out string search, out string orderBy, out int startRowIndex, out int maxRows)
+        {
+            maxRows = model.length;
+            startRowIndex = model.start;
+            string sortBy = "", sortDir = "";
+
+            if (model.order != null)
+            {
+                // in this example we just default sort on the 1st column
+                sortBy = model.columns[model.order[0].column].data;
+                sortDir = model.order[0].direction.ToLower();
+                orderBy = sortBy + " " + sortDir;
+            }
+            else
+            {
+                orderBy = "";
+            }
+
+            if (model.search.value != null)
+            {
+                search = model.search.value;
+            }
+            else
+            {
+                search = "";
+            }
+
+        }
     }
 }
