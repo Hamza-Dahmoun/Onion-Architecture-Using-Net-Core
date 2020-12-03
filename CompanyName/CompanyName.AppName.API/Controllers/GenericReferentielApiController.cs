@@ -18,5 +18,19 @@ namespace CompanyName.AppName.API.Controllers
         {
             _referentielBusinessService = referentielBusinessService;
         }
+
+        [HttpGet]
+        [Route("all")]
+        public List<T> Get()
+        {
+            return _referentielBusinessService.GetAll();
+        }
+
+        [Route("id")]
+        public T Get(TKey id)
+        {
+            return _referentielBusinessService.GetById(id);
+        }
+
     }
 }
