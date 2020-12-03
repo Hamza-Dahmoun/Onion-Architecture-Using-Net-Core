@@ -7,6 +7,7 @@ namespace CompanyName.AppName.Web.Infrastructure
 {
     public class ApiServicesUrls
     {
+        //Mentor:
         //Api Urls are generated using this helper class.
         //you will inject this class in constructors or views to generate api urls based on model
         //classes.In this manner you will never hard code urls in views or controllers.
