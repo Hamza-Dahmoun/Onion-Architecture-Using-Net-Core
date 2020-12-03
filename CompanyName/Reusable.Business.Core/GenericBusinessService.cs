@@ -176,6 +176,7 @@ namespace Reusable.Business.Core
 
         public virtual Expression<Func<T, object>>[] GetDefaultLoadProperties()
         {
+            //this method is inside CompanyName.AppName.API.Controllers:GenericReferentielApiController.cs
             return Array.Empty<Expression<Func<T, object>>>();
         }
     }

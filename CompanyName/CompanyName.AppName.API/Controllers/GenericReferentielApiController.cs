@@ -32,5 +32,33 @@ namespace CompanyName.AppName.API.Controllers
             return _referentielBusinessService.GetById(id);
         }
 
+        [Route("paged")]
+        public PagedResult<T> Get(string term, string orderBy = "Id", int page = 1, int pageSize = 10)
+        {
+
+            if (page < 1)
+                page = 1;
+
+            if (pageSize > MAX_PAGE_SIZE)
+                pageSize = MAX_PAGE_SIZE;
+
+
+            PagedResult<T> result;
+
+            if (!string.IsNullOrWhiteSpace(term))
+            {
+                result = _referentielBusinessService.GetAllFilteredPaged(
+                    x => x.Code.StartsWith(term) || x.Description.Contains(term),
+                    orderBy, (page - 1) * pageSize, pageSize, _referentielBusinessService.GetDefaultLoadProperties()
+                    );
+            }
+            else
+            {
+                result = _referentielBusinessService.GetAllPaged(orderBy,
+                    (page - 1) * pageSize, pageSize, _referentielBusinessService.GetDefaultLoadProperties());
+            }
+
+            return result;
+        }
     }
 }
