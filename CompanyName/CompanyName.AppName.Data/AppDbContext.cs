@@ -31,6 +31,6 @@ namespace CompanyName.AppName.Data
         public virtual DbSet<Person> Person { get; set; }
         public virtual DbSet<Wilaya> Wilaya { get; set; }
         public virtual DbSet<Commune> Commune { get; set; }
-        public virtual DbSet<Dossier> Dossier { get; set; }
+        public virtual DbSet<Activity> Activity { get; set; }
     }
 }
