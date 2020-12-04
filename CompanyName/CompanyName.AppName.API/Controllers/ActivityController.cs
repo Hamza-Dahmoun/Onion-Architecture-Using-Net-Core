@@ -17,5 +17,37 @@ namespace CompanyName.AppName.API.Controllers
         {
             
         }
+
+        [HttpPost]
+        public ActionResult Create([FromBody] Activity activity)
+        {
+            if(activity == null)
+            {
+                return BadRequest();
+            }
+
+            var businessResult = _referentielBusinessService.Add(activity);
+            return Ok(businessResult);
+        }
+
+        [HttpPut("{id}")]
+        public ActionResult Update(Guid id, [FromBody] Activity activity)
+        {
+            //why are we supposed to receive 'id' in the request header when we're not using it??
+            if(activity == null)
+            {
+                return BadRequest();
+            }
+
+            var businessResult = _referentielBusinessService.Update(activity);
+            return Ok(businessResult);
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult Delete(Guid id)
+        {
+            var businessResult = _referentielBusinessService.Delete(new Activity{ Id = id});
+            return Ok(businessResult);
+        }
     }
 }
