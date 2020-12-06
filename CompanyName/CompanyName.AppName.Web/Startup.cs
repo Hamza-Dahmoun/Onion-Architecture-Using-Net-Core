@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using CompanyName.AppName.Business;
 using CompanyName.AppName.Data;
+using CompanyName.AppName.Web.Infrastructure;
+using CompanyName.AppName.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -45,6 +47,17 @@ namespace CompanyName.AppName.Web
             services.AddTransient(typeof(GenericBusinessService<,>));
             services.AddTransient<PersonBusinessService>();
             services.AddTransient(typeof(ReferentielBusinessService<,>));
+
+            //registering ActivityApiService
+            services.AddHttpClient<ActivityApiService>();
+
+            //registering AppSettings services
+            AppSettings appSettings = Configuration.GetSection(nameof(appSettings)).Get<AppSettings>();
+            services.AddSingleton(appSettings);
+
+            //registering ApiServicesUrls
+            services.AddSingleton(new ApiServicesUrls(appSettings));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
