@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CompanyName.AppName.Business;
+using CompanyName.AppName.Domain.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -25,6 +27,10 @@ namespace CompanyName.AppName.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //registering ReferentielBusinessService
+            services.AddTransient(typeof(ReferentielBusinessService<,>));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
