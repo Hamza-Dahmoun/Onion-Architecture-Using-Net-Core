@@ -1,0 +1,167 @@
+﻿@model List<CompanyName.AppName.Domain.Entities.Activity>
+@inject CompanyName.AppName.Web.Infrastructure.ApiServicesUrls ApiServicesUrls
+@{
+    ViewData["Title"] = "List of Activities";
+}
+
+<partial name="_Message" />
+<partial name="_datatablesStyle" />
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Code
+            </th>
+            <th>
+                Description
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<partial name="_datatablesScript" />
+
+<script>
+        $(function () {
+            initDataTable("table","@(ApiServicesUrls.GetDatabableUrl<CompanyName.AppName.Domain.Entities.Activity>())")
+        });
+
+        function initDataTable(selector, url) {
+
+           @*var dtTable =  $(selector).DataTable({
+            "processing": true,
+            "serverSide": true,
+            "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+            "ajax": {
+                url: url,
+                type: 'POST',
+                dataType: "json",
+                contentType: 'application/json',
+                data: function (d) {
+                          return JSON.stringify( d );
+                      }
+                },
+            "columns":
+            [
+                //{ "data": "id", "visible": false, "searchable": false },
+                { "data": "code", "visible": true, "searchable": false },
+                { "data": "designation", "visible": true, "searchable": false },
+                //{ "data": "secteurActivite.designation", "visible": true, "searchable": false },
+                { "data": null, "searchable": false, "sortable": false,
+                  "render": function (data, type, row, meta){
+                      var markup =
+                        "<a class='btn btn-secondary btn-sm' href=" + '@Url.Action("Edit")/' + row.id + "><i class='fa fa-pencil-alt'></i></a>" + " " +
+                        "<a class='btn btn-danger btn-sm' href=" + '@Url.Action("Delete")/' + row.id +"><i class='fa fa-trash'></i></a>";
+                          return markup;
+                        }
+                    }
+            ],
+           });*@
+
+            
+
+
+            $(selector).DataTable(
+                {
+                    "processing": true,//whether to show 'processing' indicator when waiting for a processing result or not
+                    "serverSide": true,//for server side processing
+                    "filter": true,//this is for disable filter (search box)
+                    "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+                    "ajax": {
+                        "url": url,
+                        "type": 'POST',
+                        dataType: "json",
+                        "data": function (d) {
+                            return JSON.stringify(d);
+                        },
+                        /*
+                         WHEN I USED THE BELOW TO SEND ELECTIONID TO THE SERVER, I GOT EVERY LETTER AND NUMBER OF THE GUID SENT AS A SEPARATE PARAMETER!
+                         THE ABOVE WAY IS THE ONE MENTIONED IN THE DOCUMENTATION
+                         "data": JSON.stringify({electionId: electionId}),
+                         or
+                         "data": electionId,
+                         */
+
+                        //"error": function (reason) {
+                        //    //to know why I used 'response.responseJSON.message' to get the error text just log the response object and check its properties
+
+                        //    //so there is a server error, lets display the error msg
+                        //    let errorParag = document.createElement("p");
+                        //    let responseMsg = document.createElement("div");
+                        //    responseMsg.className = "alert alert-danger";
+                        //    errorParag.innerHTML = "<strong>" + resources[currentUserLanguage]["Error when retrieving Candidates!"] + "</strong> " + reason.responseJSON.message;
+                        //    responseMsg.appendChild(errorParag);
+                        //    document.getElementById("step-two").appendChild(responseMsg);
+                        //    //now lets hide the datatable wrapper (a div created by jquery which surrounds the table)
+                        //    document.getElementById("step-two").querySelector(".dataTables_wrapper").style.display = "none";
+                        //}
+                    },
+                    "columnDefs": [
+                        { "type": "numeric-comma", targets: "_all" }
+                    ],
+                    "columns":
+                        [//These are the columns to be displayed, and they are the fields of the voters objects brought from the server
+                            //{ "data": "Id", "visible": false, "searchable": false },
+                            //{ "data": "FirstName", "title": resources[currentUserLanguage]["FirstName"], "name": "FirstName", "visible": true, "searchable": true, "sortable": false },
+                            //{ "data": "LastName", "title": resources[currentUserLanguage]["LastName"], "name": "LastName", "visible": true, "searchable": true, "sortable": false },
+                            //{ "data": "StateName", "title": resources[currentUserLanguage]["State"], "visible": true, "searchable": true, "sortable": false },
+                            //{
+                            //    "data": null, "searchable": false, "sortable": false,
+                            //    "render": function (data, type, row, meta) {
+                            //        var button =
+                            //            "<a class='select-candidate-btn' title='Select this Voter as a Candidate' voterid=" +
+                            //            row.Id + " voterfullname='" + row.FirstName + " " + row.LastName
+                            //            + "' onclick='selectNewCandidate()'>Select as Candidate</a>"
+                            //            + "<div class='spinner-border text-success hidden-spinner'></div>"
+                            //            ;
+
+
+                            //        return button;
+                            //    }
+                            //}
+
+                            //{ "data": "id", "visible": false, "searchable": false },
+                { "data": "code", "visible": true, "searchable": false },
+                { "data": "designation", "visible": true, "searchable": false },
+                //{ "data": "secteurActivite.designation", "visible": true, "searchable": false },
+                { "data": null, "searchable": false, "sortable": false,
+                  "render": function (data, type, row, meta){
+                      var markup =
+                        "<a class='btn btn-secondary btn-sm' href=" + '@Url.Action("Edit")/' + row.id + "><i class='fa fa-pencil-alt'></i></a>" + " " +
+                        "<a class='btn btn-danger btn-sm' href=" + '@Url.Action("Delete")/' + row.id +"><i class='fa fa-trash'></i></a>";
+                          return markup;
+                        }
+                    }
+                        ]
+                }
+            );
+
+    }
+
+
+
+</script>
+}
