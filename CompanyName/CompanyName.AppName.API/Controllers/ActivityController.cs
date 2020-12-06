@@ -19,7 +19,7 @@ namespace CompanyName.AppName.API.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create([FromBody] Activity activity)
+        public IActionResult Create([FromBody] Activity activity)
         {
             if(activity == null)
             {
@@ -31,7 +31,7 @@ namespace CompanyName.AppName.API.Controllers
         }
 
         [HttpPut("{id}")]
-        public ActionResult Update(Guid id, [FromBody] Activity activity)
+        public IActionResult Update(Guid id, [FromBody] Activity activity)
         {
             //why are we supposed to receive 'id' in the request header when we're not using it??
             if(activity == null)
@@ -44,7 +44,7 @@ namespace CompanyName.AppName.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public ActionResult Delete(Guid id)
+        public IActionResult Delete(Guid id)
         {
             var businessResult = _referentielBusinessService.Delete(new Activity{ Id = id});
             return Ok(businessResult);
