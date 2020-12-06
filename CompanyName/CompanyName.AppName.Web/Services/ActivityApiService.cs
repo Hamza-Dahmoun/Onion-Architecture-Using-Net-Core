@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace CompanyName.AppName.Web.Services
 {
-    public class ActivityService
+    public class ActivityApiService
     {
         //The methods of this class use services from API project controllers
 
@@ -21,7 +21,7 @@ namespace CompanyName.AppName.Web.Services
         private readonly ApiServicesUrls _apiServicesUrls;
         private readonly string _baseUrl;
 
-        public ActivityService(HttpClient httpClient, AppSettings appSettings, ApiServicesUrls apiServicesUrls, string baseUrl)
+        public ActivityApiService(HttpClient httpClient, AppSettings appSettings, ApiServicesUrls apiServicesUrls, string baseUrl)
         {
             _httpClient = httpClient;
             _appSettings = appSettings;
