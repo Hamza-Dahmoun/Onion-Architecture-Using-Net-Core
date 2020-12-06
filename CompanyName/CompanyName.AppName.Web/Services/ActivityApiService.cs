@@ -21,12 +21,12 @@ namespace CompanyName.AppName.Web.Services
         private readonly ApiServicesUrls _apiServicesUrls;
         private readonly string _baseUrl;
 
-        public ActivityApiService(HttpClient httpClient, AppSettings appSettings, ApiServicesUrls apiServicesUrls, string baseUrl)
+        public ActivityApiService(HttpClient httpClient, AppSettings appSettings, ApiServicesUrls apiServicesUrls)
         {
             _httpClient = httpClient;
             _appSettings = appSettings;
             _apiServicesUrls = apiServicesUrls;
-            _baseUrl = baseUrl;
+            _baseUrl = apiServicesUrls.GetBaseUrl<Activity>();
         }
 
         public async Task<List<Activity>> GetAllAsync()
