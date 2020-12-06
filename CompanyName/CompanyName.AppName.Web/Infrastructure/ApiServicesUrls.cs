@@ -31,17 +31,17 @@ namespace CompanyName.AppName.Web.Infrastructure
             return CreateRequestUri(ApiBaseUrl, $"{typeof(T).Name}").ToString();
         }
 
-        public string GetAll<T>()
+        public string GetAllUrl<T>()
         {
             return CreateRequestUri(ApiBaseUrl, $"{typeof(T).Name}/all").ToString();
         }
 
-        public string GetAllPaged<T>()
+        public string GetAllPagedUrl<T>()
         {
             return CreateRequestUri(ApiBaseUrl, $"{typeof(T).Name}/paged").ToString();
         }
 
-        public string GetDatabable<T>()
+        public string GetDatabableUrl<T>()
         {
             return CreateRequestUri(ApiBaseUrl, $"{typeof(T).Name}/datatable").ToString();
         }
