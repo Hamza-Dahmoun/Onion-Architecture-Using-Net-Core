@@ -76,5 +76,35 @@ namespace CompanyName.AppName.Web.Services
 
             return businessResult;
         }
+
+        public async Task<BusinessResult> PutAsync(Guid id, Activity entity)
+        {
+            BusinessResult businessResult = BusinessResult.Success;
+
+            string requestUrl = _apiServicesUrls.GetByIdUrl<Activity, Guid>(id);
+
+            HttpResponseMessage response = await _httpClient.PutAsJsonAsync(requestUrl, entity);
+
+            response.EnsureSuccessStatusCode();
+
+            businessResult = JsonConvert.DeserializeObject<BusinessResult>(await response.Content.ReadAsStringAsync());
+
+            return businessResult;
+        }
+
+        public async Task<BusinessResult> DeleteAsync(Guid id, Activity entity)
+        {
+            BusinessResult businessResult = BusinessResult.Success;
+
+            string requestUrl = _apiServicesUrls.GetByIdUrl<Activity, Guid>(id);
+
+            HttpResponseMessage response = await _httpClient.DeleteAsync(requestUrl);
+
+            response.EnsureSuccessStatusCode();
+
+            businessResult = JsonConvert.DeserializeObject<BusinessResult>(await response.Content.ReadAsStringAsync());
+
+            return businessResult;
+        }
     }
 }
