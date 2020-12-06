@@ -1,6 +1,7 @@
 ﻿using CompanyName.AppName.Domain.Entities;
 using CompanyName.AppName.Web.Infrastructure;
 using Newtonsoft.Json;
+using Reusable.Business.Core.BusinessResult;
 using Reusable.Domain.Core;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,9 @@ namespace CompanyName.AppName.Web.Services
 {
     public class ActivityService
     {
+        //The methods of this class use services from API project controllers
+
+
         private readonly HttpClient _httpClient;
         private readonly AppSettings _appSettings;
         private readonly ApiServicesUrls _apiServicesUrls;
@@ -58,5 +62,19 @@ namespace CompanyName.AppName.Web.Services
             return entity;
         }
 
+        public async Task<BusinessResult> PostAsync(Activity entity)
+        {
+            BusinessResult businessResult = BusinessResult.Success;
+
+            string requestUrl = _apiServicesUrls.GetBaseUrl<Activity>();
+
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(requestUrl, entity);
+
+            response.EnsureSuccessStatusCode();
+
+            businessResult = JsonConvert.DeserializeObject<BusinessResult>(await response.Content.ReadAsStringAsync());
+
+            return businessResult;
+        }
     }
 }

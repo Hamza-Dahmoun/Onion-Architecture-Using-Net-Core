@@ -13,6 +13,8 @@ namespace CompanyName.AppName.API.Controllers
     [ApiController]
     public class ActivityController : GenericReferentielApiController<Activity, Guid>
     {
+        //This controller uses Business services from Business project
+
         public ActivityController(ReferentielBusinessService<Activity, Guid> referentielBusinessService):base(referentielBusinessService)
         {
             
