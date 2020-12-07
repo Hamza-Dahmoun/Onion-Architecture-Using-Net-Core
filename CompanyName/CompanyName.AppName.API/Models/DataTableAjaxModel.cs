@@ -27,7 +27,7 @@ namespace CompanyName.AppName.API
     public class Order
     {
         public int column { get; set; }
-        public string direction { get; set; }
+        public string dir { get; set; }
     }
 
     public class Search

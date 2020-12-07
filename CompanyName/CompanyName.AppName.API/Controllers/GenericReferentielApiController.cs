@@ -92,7 +92,7 @@ namespace CompanyName.AppName.API.Controllers
             {
                 // in this example we just default sort on the 1st column
                 sortBy = model.columns[model.order[0].column].data;
-                sortDir = model.order[0].direction.ToLower();
+                sortDir = model.order[0].dir.ToLower();
                 orderBy = sortBy + " " + sortDir;
             }
             else
