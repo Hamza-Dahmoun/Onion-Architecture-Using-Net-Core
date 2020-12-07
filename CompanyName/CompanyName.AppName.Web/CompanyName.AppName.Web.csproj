@@ -24,4 +24,8 @@
     <ProjectReference Include="..\Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Activity\" />
+  </ItemGroup>
+
 </Project>
