@@ -58,6 +58,15 @@ namespace CompanyName.AppName.Web
             //registering ApiServicesUrls
             services.AddSingleton(new ApiServicesUrls(appSettings));
 
+            services.AddCors(o => {
+                o.AddDefaultPolicy(p =>
+                {
+                    p.AllowAnyOrigin();
+                    p.AllowAnyMethod();
+                    p.AllowAnyHeader();
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -79,6 +88,8 @@ namespace CompanyName.AppName.Web
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {

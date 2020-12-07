@@ -30,6 +30,7 @@ namespace CompanyName.AppName.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddControllers();
 
             //registering db context services, note that the connection string is the one inside appsettings.json file
@@ -41,6 +42,16 @@ namespace CompanyName.AppName.API
 
             //registering ReferentielBusinessService
             services.AddTransient(typeof(ReferentielBusinessService<,>));
+
+            services.AddCors(o =>
+            {
+                o.AddDefaultPolicy(p =>
+                {
+                    p.AllowAnyOrigin();
+                    p.AllowAnyMethod();
+                    p.AllowAnyHeader();
+                });
+            });
 
         }
 
@@ -55,6 +66,8 @@ namespace CompanyName.AppName.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors();
 
             app.UseEndpoints(endpoints =>
             {
