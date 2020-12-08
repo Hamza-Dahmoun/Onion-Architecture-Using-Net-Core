@@ -60,5 +60,27 @@ namespace CompanyName.AppName.Web.Controllers
 
             return View(activite);
         }
+
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            Activity activity = await _activityApiService.GetByIdAsync(id);
+            return View(activity);
+        }
+
+        [ValidateAntiForgeryToken]
+        [HttpPost("{id}")]
+        public async Task<IActionResult> Edit(Guid id, Activity activity)
+        {
+            BusinessResult businessResult;
+            if (ModelState.IsValid)
+            {
+                businessResult = await _activityApiService.PutAsync(id, activity);
+                ViewData["Message"] = businessResult.ToBootstrapAlerts();
+            }
+
+            return View(activity);
+        }
     }
 }
