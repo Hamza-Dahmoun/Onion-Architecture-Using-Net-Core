@@ -16,6 +16,9 @@
     <thead>
         <tr>
             <th>
+                Id
+            </th>
+            <th>
                 Code
             </th>
             <th>
@@ -27,24 +30,33 @@
     <tbody>
         @foreach (var item in Model)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Code)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td></td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>
 <partial name="_datatablesScript" />
-
+<script>
+    $.ajax({
+        method: "GET",
+        url: "http://localhost:63654/api/activity/all"
+    });
+</script>
 <script>
         $(function () {
             initDataTable("table","@(ApiServicesUrls.GetDatabableUrl<CompanyName.AppName.Domain.Entities.Activity>())")
@@ -56,21 +68,22 @@
             "processing": true,
             "serverSide": true,
             "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
-            "ajax": {
-                url: 'http://localhost:63654/api/activity/datatable',
-                type: 'POST',
+               "ajax": {
+                   type: 'POST',
+                url: 'http://localhost:63654/api/activity/datatable',                
                 dataType: "json",
-                contentType: 'application/json',
-                data: function (d) {
-                    console.log(d);
-                          return JSON.stringify(d);
-                      }
+                //contentType: 'application/json',
+                //data: function (d) {
+                //    console.log(d);
+                //    console.log(JSON.stringify(d));
+                //    return JSON.stringify(d);
+                //      }
                 },
             "columns":
             [
-                //{ "data": "id", "visible": false, "searchable": false },
-                { "data": "code", "visible": true, "searchable": false },
-                { "data": "description", "visible": true, "searchable": false },
+                    { "data": "id", "name": "id", "visible": false, "searchable": false },
+                    { "data": "code", "name": "code", "visible": true, "searchable": false },
+                    { "data": "description", "name": "description", "visible": true, "searchable": false },
                 //{ "data": "secteurActivite.designation", "visible": true, "searchable": false },
                 { "data": null, "searchable": false, "sortable": false,
                   "render": function (data, type, row, meta){
