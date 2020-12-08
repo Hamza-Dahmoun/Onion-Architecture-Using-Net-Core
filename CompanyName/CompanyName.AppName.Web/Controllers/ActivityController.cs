@@ -82,5 +82,29 @@ namespace CompanyName.AppName.Web.Controllers
 
             return View(activity);
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            Activity activity = await _activityApiService.GetByIdAsync(id);
+            return View(activity);
+        }
+        [ValidateAntiForgeryToken]
+        [HttpPost("{id}")]
+        public async Task<IActionResult> Delete(Guid id, Activity activity)
+        {
+            BusinessResult businessResult;
+            businessResult = await _activityApiService.DeleteAsync(id, activity);
+
+            if (businessResult.Succeeded)
+            {
+                ViewData["Message"] = businessResult.ToBootstrapAlerts();
+                return RedirectToAction(nameof(Index));
+            }
+
+            ViewData["Message"] = businessResult.ToBootstrapAlerts();
+
+            return View(activity);
+        }
     }
 }
