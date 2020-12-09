@@ -94,14 +94,16 @@ namespace CompanyName.AppName.Web.Controllers
             return View(activity);
         }
 
-        [HttpGet("{id}")]
+        //[HttpGet("{id}")]
+        [HttpGet]
         public async Task<IActionResult> Delete(Guid id)
         {
             Activity activity = await _activityApiService.GetByIdAsync(id);
             return View(activity);
         }
         [ValidateAntiForgeryToken]
-        [HttpPost("{id}")]
+        //[HttpPost("{id}")]
+        [HttpPost]
         public async Task<IActionResult> Delete(Guid id, Activity activity)
         {
             BusinessResult businessResult;
@@ -109,11 +111,13 @@ namespace CompanyName.AppName.Web.Controllers
 
             if (businessResult.Succeeded)
             {
-                ViewData["Message"] = businessResult.ToBootstrapAlerts();
+                TempData["Message"] = businessResult.ToBootstrapAlerts();
                 return RedirectToAction(nameof(Index));
             }
-
-            ViewData["Message"] = businessResult.ToBootstrapAlerts();
+            else
+            {
+                ViewData["Message"] = businessResult.ToBootstrapAlerts();
+            }
 
             return View(activity);
         }
