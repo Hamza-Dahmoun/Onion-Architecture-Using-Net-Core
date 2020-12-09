@@ -119,59 +119,7 @@ namespace CompanyName.AppName.API.Controllers
             //'DataTableAjaxModel' as a parameter to get ajax request data parameter ... it didn't work
 
             //lets first get the variables of the request (of the form), and then build the linq query accordingly
-            //above each variable I wrote the official doc of jQuery
-
-
-            // draw
-            // integer Type
-            // Draw counter.This is used by DataTables to ensure that the Ajax returns from server - side processing requests
-            // are drawn in sequence by DataTables(Ajax requests are asynchronous and thus can return out of sequence). 
-            // This is used as part of the draw return parameter(see below).
-
-            int draw1 = int.Parse(HttpContext.Request.Form["draw"].FirstOrDefault());
-
-
-
-            // start
-            // integer type
-            // Paging first record indicator.This is the start point in the current data set(0 index based -i.e. 0 is the first record).
-
-            int start = int.Parse(HttpContext.Request.Form["start"].FirstOrDefault());
-
-
-
-            // length
-            // integer type
-            // Number of records that the table can display in the current draw. It is expected that the number of records returned 
-            // will be equal to this number, unless the server has fewer records to return. Note that this can be -1 to indicate that 
-            // all records should be returned (although that negates any benefits of server-side processing!)
-
-            int length = int.Parse(HttpContext.Request.Form["length"].FirstOrDefault());
-
-
-
-            // search[value]
-            // string Type
-            // Global search value. To be applied to all columns which have searchable as true.
-
-            var searchValue = HttpContext.Request.Form["search[value]"].FirstOrDefault();
-
-
-            // order[i][column]
-            // integer Type
-            // Column to which ordering should be applied. This is an index reference to the columns array of information
-            // that is also submitted to the server.
-
-            var sortColumnName = HttpContext.Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
-
-
-            // order[i][dir]
-            // integer Type
-            // Ordering direction for this column.It will be asc or desc to indicate ascending ordering or descending ordering, respectively.
-
-
-            var sortColumnDirection = HttpContext.Request.Form["order[0][dir]"].FirstOrDefault();
-
+            GetDataTableParametersFromRequest(out int draw1, out int start, out int length, out string searchValue, out string sortColumnName, out string sortColumnDirection);
 
             //Page Size (10, 20, 50,100) 
             int pageSize = length != null ? Convert.ToInt32(length) : 0;
@@ -194,6 +142,59 @@ namespace CompanyName.AppName.API.Controllers
 
                 return new JQueryDataTableRetunedData<T> { draw = draw1, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items };
             }
+        }
+
+        protected void GetDataTableParametersFromRequest(out int draw1, out int start, out int length, out string searchValue, out string sortColumnName, out string sortColumnDirection)
+        {
+            // draw
+            // integer Type
+            // Draw counter.This is used by DataTables to ensure that the Ajax returns from server - side processing requests
+            // are drawn in sequence by DataTables(Ajax requests are asynchronous and thus can return out of sequence). 
+            // This is used as part of the draw return parameter(see below).
+
+            draw1 = int.Parse(HttpContext.Request.Form["draw"].FirstOrDefault());
+
+
+
+            // start
+            // integer type
+            // Paging first record indicator.This is the start point in the current data set(0 index based -i.e. 0 is the first record).
+
+            start = int.Parse(HttpContext.Request.Form["start"].FirstOrDefault());
+
+
+
+            // length
+            // integer type
+            // Number of records that the table can display in the current draw. It is expected that the number of records returned 
+            // will be equal to this number, unless the server has fewer records to return. Note that this can be -1 to indicate that 
+            // all records should be returned (although that negates any benefits of server-side processing!)
+
+            length = int.Parse(HttpContext.Request.Form["length"].FirstOrDefault());
+
+
+
+            // search[value]
+            // string Type
+            // Global search value. To be applied to all columns which have searchable as true.
+
+            searchValue = HttpContext.Request.Form["search[value]"].FirstOrDefault();
+
+
+            // order[i][column]
+            // integer Type
+            // Column to which ordering should be applied. This is an index reference to the columns array of information
+            // that is also submitted to the server.
+
+            sortColumnName = HttpContext.Request.Form["columns[" + Request.Form["order[0][column]"].FirstOrDefault() + "][name]"].FirstOrDefault();
+
+
+            // order[i][dir]
+            // integer Type
+            // Ordering direction for this column.It will be asc or desc to indicate ascending ordering or descending ordering, respectively.
+
+
+            sortColumnDirection = HttpContext.Request.Form["order[0][dir]"].FirstOrDefault();
         }
     }
 }
