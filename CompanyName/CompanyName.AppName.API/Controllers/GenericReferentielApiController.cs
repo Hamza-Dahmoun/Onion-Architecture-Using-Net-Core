@@ -26,7 +26,7 @@ namespace CompanyName.AppName.API.Controllers
             return _referentielBusinessService.GetAll();
         }
 
-        [Route("id")]
+        [Route("{id}")]
         public T Get(TKey id)
         {
             return _referentielBusinessService.GetById(id);
