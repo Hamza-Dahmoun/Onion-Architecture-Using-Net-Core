@@ -121,5 +121,12 @@ namespace CompanyName.AppName.Web.Controllers
 
             return View(activity);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Details(Guid id)
+        {
+            Activity activity = await _activityApiService.GetByIdAsync(id);
+            return View(activity);
+        }
     }
 }
