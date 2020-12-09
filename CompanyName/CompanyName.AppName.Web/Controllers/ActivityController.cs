@@ -79,7 +79,16 @@ namespace CompanyName.AppName.Web.Controllers
             if (ModelState.IsValid)
             {
                 businessResult = await _activityApiService.PutAsync(id, activity);
-                ViewData["Message"] = businessResult.ToBootstrapAlerts();
+
+                if (businessResult.Succeeded)
+                {
+                    TempData["Message"] = businessResult.ToBootstrapAlerts();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewData["Message"] = businessResult.ToBootstrapAlerts();
+                }
             }
 
             return View(activity);
