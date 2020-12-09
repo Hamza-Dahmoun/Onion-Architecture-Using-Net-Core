@@ -62,7 +62,8 @@ namespace CompanyName.AppName.Web.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        //[HttpGet("{id}")]
+        [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
         {
             Activity activity = await _activityApiService.GetByIdAsync(id);
@@ -70,7 +71,8 @@ namespace CompanyName.AppName.Web.Controllers
         }
 
         [ValidateAntiForgeryToken]
-        [HttpPost("{id}")]
+        //[HttpPost("{id}")]
+        [HttpPost]
         public async Task<IActionResult> Edit(Guid id, Activity activity)
         {
             BusinessResult businessResult;
