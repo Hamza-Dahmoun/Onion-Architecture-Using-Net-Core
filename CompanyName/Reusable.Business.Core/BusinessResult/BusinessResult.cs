@@ -18,7 +18,7 @@ namespace Reusable.Business.Core.BusinessResult
         }
 
         public ICollection<MessageResult> Messages { get; }
-        public bool Succeeded { get; protected set; }
+        public bool Succeeded { get; set; }
         public static BusinessResult Success 
         {
             //this is a stic member to be assigned to a businessResult after doing an operation successfully
