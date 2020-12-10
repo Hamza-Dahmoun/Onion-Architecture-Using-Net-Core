@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using CompanyName.AppName.Business;
@@ -9,10 +10,12 @@ using CompanyName.AppName.Web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Localization;
 using Reusable.Business.Core;
 using Reusable.Data.Abstractions;
 using Reusable.Data.Core;
@@ -31,7 +34,15 @@ namespace CompanyName.AppName.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddLocalization();
+            services.AddControllersWithViews()
+                .AddViewLocalization()
+                .AddDataAnnotationsLocalization(
+                options => options.DataAnnotationLocalizerProvider = (type, factory) =>
+                {
+                    return factory.Create(typeof(Labels));
+                }
+                );
 
             //registering db context services, note that the connection string is the one inside appsettings.json file
             services.AddScoped<DbContext, AppDbContext>();
@@ -65,6 +76,30 @@ namespace CompanyName.AppName.Web
                     p.AllowAnyMethod();
                     p.AllowAnyHeader();
                 });
+            });
+
+
+            //Configuring LocalizationOptions to use ResourcesPath "Resources" in Web project
+            services.Configure<LocalizationOptions>(options => { options.ResourcesPath = "Resources"; });
+
+            var cultures = new List<CultureInfo>
+                {
+                    new CultureInfo("ar"),                    
+                    new CultureInfo("en-US"),
+                    new CultureInfo("fr")
+                };
+
+            //Configuring RequestLocalizationOptions
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                //TODO: Set the SupportedCultures list
+                options.SupportedCultures = cultures;
+
+                //TODO: Set SupportedUICultures list
+                options.SupportedUICultures = cultures;
+
+                //TODO: Define DefaultRequestCulture to be fr-FR
+                options.DefaultRequestCulture = new RequestCulture("en-US");
             });
 
         }
