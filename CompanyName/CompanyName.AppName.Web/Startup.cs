@@ -34,9 +34,9 @@ namespace CompanyName.AppName.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddLocalization();
+            services.AddLocalization(options => { options.ResourcesPath = "Resources"; });
             services.AddControllersWithViews()
-                .AddViewLocalization()
+                .AddViewLocalization(options => { options.ResourcesPath = "Resources"; })
                 .AddDataAnnotationsLocalization(
                 options => options.DataAnnotationLocalizerProvider = (type, factory) =>
                 {

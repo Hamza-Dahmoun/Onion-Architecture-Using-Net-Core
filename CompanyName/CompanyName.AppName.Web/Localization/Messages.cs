@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CompanyName.AppName
+namespace CompanyName.AppName.Web
 {
     public class Messages
     {
