@@ -306,6 +306,17 @@
         "runtime": {
           "CompanyName.AppName.Web.dll": {}
         },
+        "resources": {
+          "ar/CompanyName.AppName.Web.resources.dll": {
+            "locale": "ar"
+          },
+          "en/CompanyName.AppName.Web.resources.dll": {
+            "locale": "en"
+          },
+          "fr/CompanyName.AppName.Web.resources.dll": {
+            "locale": "fr"
+          }
+        },
         "compile": {
           "CompanyName.AppName.Web.dll": {}
         }
