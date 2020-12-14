@@ -84,7 +84,7 @@ namespace CompanyName.AppName.Web
 
             var cultures = new List<CultureInfo>
                 {
-                    //new CultureInfo("ar"),                    
+                    new CultureInfo("ar"),                    
                     new CultureInfo("en-US"),
                     new CultureInfo("fr-FR")
                 };
@@ -99,7 +99,7 @@ namespace CompanyName.AppName.Web
                 options.SupportedUICultures = cultures;
 
                 //TODO: Define DefaultRequestCulture to be fr-FR
-                options.DefaultRequestCulture = new RequestCulture("fr-FR");
+                options.DefaultRequestCulture = new RequestCulture("en-US");
             });
 
         }
