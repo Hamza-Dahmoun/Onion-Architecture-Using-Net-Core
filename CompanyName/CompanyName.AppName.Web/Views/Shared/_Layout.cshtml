@@ -11,11 +11,7 @@
 </head>
 <body>
 
-    @{ /*Importing namespace Microsoft.Extensions.Localization; */}
-    @using Microsoft.Extensions.Localization;
-
-    @{/*Injecting IStringLocalizer for Labelsc.s shared resource in variable named labelsLocalizer */}
-    @inject IStringLocalizer<Labels> labelLocalizer
+  
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
@@ -27,23 +23,23 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@menuLocalizer["Home"]</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                Referentiels
+                                @menuLocalizer["Referentiels"]
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" asp-action="Index" asp-controller="Activity">
-                                    Activities
+                                    @menuLocalizer["Activities"]
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" asp-area="" asp-controller="Commune" asp-action="Index">Commune</a>
-                                <a class="dropdown-item" asp-area="" asp-controller="Wilaya" asp-action="Index">Wilaya</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Commune" asp-action="Index">@menuLocalizer["Commune"]</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Wilaya" asp-action="Index">@menuLocalizer["Wilaya"]</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">@menuLocalizer["Privacy"]</a>
                         </li>
                         <partial name="_selectLanguageDropDownList" />
                     </ul>
