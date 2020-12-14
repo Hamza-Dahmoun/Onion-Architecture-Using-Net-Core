@@ -84,9 +84,9 @@ namespace CompanyName.AppName.Web
 
             var cultures = new List<CultureInfo>
                 {
-                    new CultureInfo("ar"),                    
+                    //new CultureInfo("ar"),                    
                     new CultureInfo("en-US"),
-                    new CultureInfo("fr")
+                    new CultureInfo("fr-FR")
                 };
 
             //Configuring RequestLocalizationOptions
@@ -99,7 +99,7 @@ namespace CompanyName.AppName.Web
                 options.SupportedUICultures = cultures;
 
                 //TODO: Define DefaultRequestCulture to be fr-FR
-                options.DefaultRequestCulture = new RequestCulture("en-US");
+                options.DefaultRequestCulture = new RequestCulture("fr-FR");
             });
 
         }
@@ -107,6 +107,9 @@ namespace CompanyName.AppName.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //add RequestLocalization middleware
+            app.UseRequestLocalization();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
