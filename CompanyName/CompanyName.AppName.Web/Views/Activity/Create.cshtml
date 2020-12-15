@@ -1,12 +1,12 @@
 ﻿@model CompanyName.AppName.Domain.Entities.Activity
 
 @{
-    ViewData["Title"] = "Create an Activity";
+    ViewData["Title"] = labelLocalizer["Create an Activity"];
 }
 
-<h1>Create</h1>
+<h1>@labelLocalizer["Create"]</h1>
 
-<h4>Activity</h4>
+<h4>@labelLocalizer["Activity"]</h4>
 <hr />
 <partial name="_Message" />
 <div class="row">
@@ -31,7 +31,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">@labelLocalizer["Back to List"]</a>
 </div>
 
 @section Scripts {

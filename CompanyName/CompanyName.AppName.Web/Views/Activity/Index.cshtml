@@ -1,7 +1,7 @@
 ﻿@model List<CompanyName.AppName.Domain.Entities.Activity>
 @inject CompanyName.AppName.Web.Infrastructure.ApiServicesUrls ApiServicesUrls
 @{
-    ViewData["Title"] = "List of Activities";
+    ViewData["Title"] = labelLocalizer["List of Activities"];
 }
 
 <partial name="_Message" />
@@ -9,20 +9,20 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">@labelLocalizer["Create New"]</a>
 </p>
 <partial name="_datatablesStyle" />
 <table class="table">
     <thead>
         <tr>
             <th>
-                Id
+                @labelLocalizer["Id"]
             </th>
             <th>
-                Code
+                @labelLocalizer["Code"]
             </th>
             <th>
-                Description
+                @labelLocalizer["Description"]
             </th>
             <th></th>
         </tr>
@@ -42,9 +42,9 @@
             </td>
             <td></td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">@labelLocalizer["Edit"]</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@labelLocalizer["Details"]</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@labelLocalizer["Delete"]</a>
             </td>
         </tr>
         }
