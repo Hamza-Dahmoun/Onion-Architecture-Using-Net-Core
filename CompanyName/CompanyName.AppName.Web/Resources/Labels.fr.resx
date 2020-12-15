@@ -126,6 +126,9 @@
   <data name="Back to List" xml:space="preserve">
     <value>Retour à la liste</value>
   </data>
+  <data name="building Web apps with ASP.NET Core" xml:space="preserve">
+    <value>développement des applications web utilisant ASP.NET Core</value>
+  </data>
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
@@ -153,13 +156,22 @@
   <data name="Edit" xml:space="preserve">
     <value>Editer</value>
   </data>
+  <data name="Home Page" xml:space="preserve">
+    <value>Page d'Acceuil</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
+  </data>
+  <data name="Learn about" xml:space="preserve">
+    <value>Apprendre</value>
   </data>
   <data name="List of Activities" xml:space="preserve">
     <value>Liste des activités</value>
   </data>
   <data name="List of municipalties" xml:space="preserve">
     <value>Liste des Communes</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Bienvenue</value>
   </data>
 </root>

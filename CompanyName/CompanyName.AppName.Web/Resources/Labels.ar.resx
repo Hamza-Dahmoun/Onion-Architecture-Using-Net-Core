@@ -126,6 +126,9 @@
   <data name="Back to List" xml:space="preserve">
     <value>Back to List</value>
   </data>
+  <data name="building Web apps with ASP.NET Core" xml:space="preserve">
+    <value>building Web apps with ASP.NET Core</value>
+  </data>
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
@@ -153,13 +156,22 @@
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
   </data>
+  <data name="Home Page" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
+  </data>
+  <data name="Learn about" xml:space="preserve">
+    <value>Learn about</value>
   </data>
   <data name="List of Activities" xml:space="preserve">
     <value>List of Activities</value>
   </data>
   <data name="List of municipalties" xml:space="preserve">
     <value>List of municipalties</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
   </data>
 </root>
