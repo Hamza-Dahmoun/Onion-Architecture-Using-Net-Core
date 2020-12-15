@@ -1,7 +1,7 @@
 ﻿@model Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.Wilaya>
 
 @{
-    ViewData["Title"] = "List of wilayas";
+    ViewData["Title"] = @labelLocalizer["List of wilayas"];
 }
 <partial name="_datatablesStyle"/>
 <partial name="_Message" />
@@ -16,16 +16,16 @@
 </form>
 <br/>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">@labelLocalizer["Create New"]</a>
 </p>
 <table class="table table-bordered table-stripped">
     <thead>
         <tr>
             <th>
-                Code
+                @labelLocalizer["Code"]
             </th>
             <th>
-                Description
+                @labelLocalizer["Description"]
             </th>
             <th></th>
         </tr>
@@ -40,9 +40,9 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">@labelLocalizer["Edit"]</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@labelLocalizer["Details"]</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@labelLocalizer["Delete"]</a>
             </td>
         </tr>
 }
@@ -61,7 +61,7 @@
                         @if (previousEnabled)
                         {
                             <li class="page-item">
-                                <a class="page-link" asp-action="Index" asp-route-page="@(Model.Page-1)" asp-route-search="@ViewBag.search">Previous</a>
+                                <a class="page-link" asp-action="Index" asp-route-page="@(Model.Page-1)" asp-route-search="@ViewBag.search">@labelLocalizer["Previous"]</a>
                             </li>
                         }
                         @if (totalPages > 0)
@@ -73,7 +73,7 @@
                         @if (nextEnabled)
                         {
                             <li class="page-item">
-                                <a class="page-link" asp-action="Index" asp-route-page="@(Model.Page+1)" asp-route-search="@ViewBag.search">Next</a>
+                                <a class="page-link" asp-action="Index" asp-route-page="@(Model.Page+1)" asp-route-search="@ViewBag.search">@labelLocalizer["Next"]</a>
                             </li>
                         }
                     </ul>
