@@ -1,4 +1,5 @@
 ﻿using CompanyName.AppName.Domain.Entities;
+using Microsoft.Extensions.Localization;
 using Reusable.Business.Core;
 using Reusable.Data.Abstractions;
 using Reusable.Domain.Core;
@@ -10,6 +11,7 @@ namespace CompanyName.AppName.Business
 {
     public class ReferentielBusinessService<T, TKey> : GenericBusinessService<T, TKey> where T : Referentiel, IEntity<TKey>
     {
+        private readonly IStringLocalizer<BusinessMessage> _businessMessageLoclizer;
         public ReferentielBusinessService(IUnitOfWork unitOfWork): base(unitOfWork)
         {
 
@@ -21,7 +23,7 @@ namespace CompanyName.AppName.Business
             //below is a business rule to ensure that it doesn't exist another entitty with the same Code or Description
             if (_repository.Count(x => x.Code == entity.Code || x.Description == entity.Description) > 0)
             {
-                throw new BusinessException("Similar entity with same code or descrption already exists!");
+                throw new BusinessException(_businessMessageLoclizer["Similar entity with same code or descrption already exists!"]);
             }
             base.OnAdding(entity);
         }
@@ -31,7 +33,7 @@ namespace CompanyName.AppName.Business
             //below is a business rule to ensure that it doesn't exist another entitty with the same Code or Description
             if (_repository.Count(x => x.Code == entity.Code || x.Description == entity.Description) > 0)
             {
-                throw new BusinessException("Similar entity with same code or descrption already exists!");
+                throw new BusinessException(_businessMessageLoclizer["Similar entity with same code or descrption already exists!"]);
             }
             base.OnUpdating(entity);
         }

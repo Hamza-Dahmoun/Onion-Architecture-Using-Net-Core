@@ -71,3 +71,7 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\CompanyName.AppName.API.csproj.CoreCompileInputs.cache
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\CompanyName.AppName.API.MvcApplicationPartsAssemblyInfo.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Localization.Abstractions.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\ar\CompanyName.AppName.Business.resources.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\en\CompanyName.AppName.Business.resources.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\fr\CompanyName.AppName.Business.resources.dll
