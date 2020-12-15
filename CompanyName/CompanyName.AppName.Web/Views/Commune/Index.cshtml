@@ -1,26 +1,26 @@
 ﻿@model Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.Commune>
 
 @{
-    ViewData["Title"] = "List of municipalties";
+    ViewData["Title"] = labelLocalizer["List of municipalties"];
 }
 
 <h1>@ViewData["Title"]</h1>
 <partial name="_Message" />
 <partial name="_datatablesStyle" />
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">@labelLocalizer["Create New"]</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                Id
+                @labelLocalizer["Id"]
             </th>
             <th>
-                Code
+                @labelLocalizer["Code"]
             </th>
             <th>
-                Description
+                @labelLocalizer["Description"]
             </th>
             @*<th></th>*@
         </tr>
