@@ -168,8 +168,8 @@
   <data name="List of Activities" xml:space="preserve">
     <value>Liste des activités</value>
   </data>
-  <data name="List of municipalties" xml:space="preserve">
-    <value>Liste des Communes</value>
+  <data name="List of cities" xml:space="preserve">
+    <value>Liste des villes</value>
   </data>
   <data name="List of states" xml:space="preserve">
     <value>List des wilayas</value>
