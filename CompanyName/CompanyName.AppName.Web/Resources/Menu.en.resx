@@ -132,7 +132,7 @@
   <data name="Referentiels" xml:space="preserve">
     <value>Referentiels</value>
   </data>
-  <data name="Wilaya" xml:space="preserve">
-    <value>Wilaya</value>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
   </data>
 </root>

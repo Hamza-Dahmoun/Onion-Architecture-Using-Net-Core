@@ -8,9 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyName.AppName.Web.Controllers
 {
-    public class WilayaController : GenericReferentielController<State, Guid>
+    public class StateController : GenericReferentielController<State, Guid>
     {
-        public WilayaController(ReferentielBusinessService<State, Guid> referentielBusinessService): base(referentielBusinessService)
+        public StateController(ReferentielBusinessService<State, Guid> referentielBusinessService): base(referentielBusinessService)
         {
 
         }

@@ -132,7 +132,7 @@
   <data name="Referentiels" xml:space="preserve">
     <value>مراجع</value>
   </data>
-  <data name="Wilaya" xml:space="preserve">
+  <data name="State" xml:space="preserve">
     <value>الولايات</value>
   </data>
 </root>

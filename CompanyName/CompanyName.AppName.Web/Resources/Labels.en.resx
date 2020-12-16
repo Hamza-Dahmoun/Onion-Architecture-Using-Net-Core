@@ -171,13 +171,13 @@
   <data name="List of municipalties" xml:space="preserve">
     <value>List of municipalties</value>
   </data>
-  <data name="List of wilayas" xml:space="preserve">
-    <value>List of wilayas</value>
+  <data name="List of states" xml:space="preserve">
+    <value>List of states</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
-  </data>
-  <data name="Wilaya" xml:space="preserve">
-    <value>Wilaya</value>
   </data>
 </root>
