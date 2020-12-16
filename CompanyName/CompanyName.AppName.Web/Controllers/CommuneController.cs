@@ -10,8 +10,8 @@ namespace CompanyName.AppName.Web.Controllers
 {
     public class CommuneController : GenericReferentielController<Commune, Guid>
     {
-        private readonly ReferentielBusinessService<Wilaya, Guid> _wilayaBusinessService;
-        public CommuneController(ReferentielBusinessService<Commune, Guid> communeBusinessService, ReferentielBusinessService<Wilaya, Guid> wilayaBusinessService) :base(communeBusinessService)
+        private readonly ReferentielBusinessService<State, Guid> _wilayaBusinessService;
+        public CommuneController(ReferentielBusinessService<Commune, Guid> communeBusinessService, ReferentielBusinessService<State, Guid> wilayaBusinessService) :base(communeBusinessService)
         {
             _wilayaBusinessService = wilayaBusinessService;
         }

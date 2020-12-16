@@ -42,7 +42,7 @@ using Microsoft.AspNetCore.Mvc.Localization;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"994b0a7dfc580eb52d267d4d9183acfae346d84f", @"/Views/Wilaya/Details.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2501974874ef3c2bcba0e23d9c770e790f0e9fcc", @"/Views/_ViewImports.cshtml")]
-    public class Views_Wilaya_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CompanyName.AppName.Domain.Entities.Wilaya>
+    public class Views_Wilaya_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CompanyName.AppName.Domain.Entities.State>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Edit", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Index", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -204,7 +204,7 @@ Write(labelLocalizer["Details"]);
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<CompanyName.AppName.Domain.Entities.Wilaya> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<CompanyName.AppName.Domain.Entities.State> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

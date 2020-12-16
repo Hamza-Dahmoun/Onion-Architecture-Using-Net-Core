@@ -4,9 +4,9 @@ using System.Text;
 
 namespace CompanyName.AppName.Domain.Entities
 {
-    public class Wilaya:Referentiel
+    public class State:Referentiel
     {
-        public Wilaya()
+        public State()
         {
             this.Communes = new HashSet<Commune>();
         }

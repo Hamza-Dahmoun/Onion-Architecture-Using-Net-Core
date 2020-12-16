@@ -10,6 +10,6 @@ namespace CompanyName.AppName.Domain.Entities
         [Display(Name="WilayaId")]
         [Required(ErrorMessage ="RequiredMessage")]
         public Guid WilayaId { get; set; }
-        public virtual Wilaya Wilaya { get; set; }
+        public virtual State Wilaya { get; set; }
     }
 }

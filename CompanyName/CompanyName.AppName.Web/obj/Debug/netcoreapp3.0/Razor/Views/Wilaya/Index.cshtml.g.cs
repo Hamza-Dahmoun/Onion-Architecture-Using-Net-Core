@@ -42,7 +42,7 @@ using Microsoft.AspNetCore.Mvc.Localization;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"34c977c7b37d67895229d80b922106b1e89c76d5", @"/Views/Wilaya/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2501974874ef3c2bcba0e23d9c770e790f0e9fcc", @"/Views/_ViewImports.cshtml")]
-    public class Views_Wilaya_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.Wilaya>>
+    public class Views_Wilaya_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.State>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_datatablesStyle", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_Message", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -576,7 +576,7 @@ WriteAttributeValue("", 385, ViewBag.search, 385, 15, false);
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.Wilaya>> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.State>> Html { get; private set; }
     }
 }
 #pragma warning restore 1591

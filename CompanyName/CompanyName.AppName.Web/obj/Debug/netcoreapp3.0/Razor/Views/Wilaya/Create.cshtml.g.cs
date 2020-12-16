@@ -42,7 +42,7 @@ using Microsoft.AspNetCore.Mvc.Localization;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8175ec87594cfa237823713b94ce622632381d0", @"/Views/Wilaya/Create.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2501974874ef3c2bcba0e23d9c770e790f0e9fcc", @"/Views/_ViewImports.cshtml")]
-    public class Views_Wilaya_Create : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CompanyName.AppName.Domain.Entities.Wilaya>
+    public class Views_Wilaya_Create : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CompanyName.AppName.Domain.Entities.State>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("control-label"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -337,7 +337,7 @@ WriteAttributeValue("", 996, labelLocalizer["Create"], 996, 25, false);
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<CompanyName.AppName.Domain.Entities.Wilaya> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<CompanyName.AppName.Domain.Entities.State> Html { get; private set; }
     }
 }
 #pragma warning restore 1591
