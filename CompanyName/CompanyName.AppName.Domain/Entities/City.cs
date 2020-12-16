@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CompanyName.AppName.Domain.Entities
 {
-    public class Commune:Referentiel
+    public class City:Referentiel
     {
         [Display(Name="WilayaId")]
         [Required(ErrorMessage ="RequiredMessage")]

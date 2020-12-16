@@ -8,10 +8,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CompanyName.AppName.Web.Controllers
 {
-    public class CommuneController : GenericReferentielController<Commune, Guid>
+    public class CommuneController : GenericReferentielController<City, Guid>
     {
         private readonly ReferentielBusinessService<State, Guid> _wilayaBusinessService;
-        public CommuneController(ReferentielBusinessService<Commune, Guid> communeBusinessService, ReferentielBusinessService<State, Guid> wilayaBusinessService) :base(communeBusinessService)
+        public CommuneController(ReferentielBusinessService<City, Guid> communeBusinessService, ReferentielBusinessService<State, Guid> wilayaBusinessService) :base(communeBusinessService)
         {
             _wilayaBusinessService = wilayaBusinessService;
         }

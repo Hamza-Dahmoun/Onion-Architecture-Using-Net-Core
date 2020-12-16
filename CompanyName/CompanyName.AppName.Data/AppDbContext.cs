@@ -30,7 +30,7 @@ namespace CompanyName.AppName.Data
 
         public virtual DbSet<Person> Person { get; set; }
         public virtual DbSet<State> State { get; set; }
-        public virtual DbSet<Commune> Commune { get; set; }
+        public virtual DbSet<City> City { get; set; }
         public virtual DbSet<Activity> Activity { get; set; }
     }
 }

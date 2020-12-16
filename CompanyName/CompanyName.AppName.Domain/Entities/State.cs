@@ -8,9 +8,9 @@ namespace CompanyName.AppName.Domain.Entities
     {
         public State()
         {
-            this.Communes = new HashSet<Commune>();
+            this.Communes = new HashSet<City>();
         }
 
-        public virtual ICollection<Commune> Communes { get; set; }
+        public virtual ICollection<City> Communes { get; set; }
     }
 }

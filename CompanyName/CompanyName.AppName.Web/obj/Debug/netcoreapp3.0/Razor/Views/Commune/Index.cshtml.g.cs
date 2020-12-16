@@ -42,7 +42,7 @@ using Microsoft.AspNetCore.Mvc.Localization;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2fca10138dfae0f34b6e1001d6dcba26891b83e1", @"/Views/Commune/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2501974874ef3c2bcba0e23d9c770e790f0e9fcc", @"/Views/_ViewImports.cshtml")]
-    public class Views_Commune_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.Commune>>
+    public class Views_Commune_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.City>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_Message", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("name", "_datatablesStyle", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -287,7 +287,7 @@ Write(ViewData["Title"]);
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
         public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.Commune>> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.City>> Html { get; private set; }
     }
 }
 #pragma warning restore 1591
