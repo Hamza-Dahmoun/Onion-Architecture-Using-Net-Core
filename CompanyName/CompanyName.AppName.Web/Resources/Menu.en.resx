@@ -120,6 +120,12 @@
   <data name="Activities" xml:space="preserve">
     <value>Activities</value>
   </data>
+  <data name="Cities" xml:space="preserve">
+    <value>Cities</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
   <data name="Commune" xml:space="preserve">
     <value>Commune</value>
   </data>
@@ -134,5 +140,8 @@
   </data>
   <data name="State" xml:space="preserve">
     <value>State</value>
+  </data>
+  <data name="States" xml:space="preserve">
+    <value>States</value>
   </data>
 </root>

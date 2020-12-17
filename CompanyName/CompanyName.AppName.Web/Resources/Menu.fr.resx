@@ -120,6 +120,12 @@
   <data name="Activities" xml:space="preserve">
     <value>Activités</value>
   </data>
+  <data name="Cities" xml:space="preserve">
+    <value>Villes</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Ville</value>
+  </data>
   <data name="Commune" xml:space="preserve">
     <value>Commune</value>
   </data>
@@ -133,6 +139,9 @@
     <value>Referentiels</value>
   </data>
   <data name="State" xml:space="preserve">
-    <value>Wilaya</value>
+    <value>Etat</value>
+  </data>
+  <data name="States" xml:space="preserve">
+    <value>Etats</value>
   </data>
 </root>

@@ -120,6 +120,12 @@
   <data name="Activities" xml:space="preserve">
     <value>النشاطات</value>
   </data>
+  <data name="Cities" xml:space="preserve">
+    <value>مدن</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>مدينة</value>
+  </data>
   <data name="Commune" xml:space="preserve">
     <value>البلديات</value>
   </data>
@@ -133,6 +139,9 @@
     <value>مراجع</value>
   </data>
   <data name="State" xml:space="preserve">
-    <value>الولايات</value>
+    <value>بلد</value>
+  </data>
+  <data name="States" xml:space="preserve">
+    <value>بلدان</value>
   </data>
 </root>
