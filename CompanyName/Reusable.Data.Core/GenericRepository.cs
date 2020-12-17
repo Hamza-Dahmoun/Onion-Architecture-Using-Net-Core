@@ -4,6 +4,7 @@ using Reusable.Domain.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Dynamic;
 using System.Linq.Expressions;
 using System.Security.Authentication.ExtendedProtection;
 using System.Text;
@@ -59,7 +60,7 @@ namespace Reusable.Data.Core
         {
             var query = _dbSet.IncludeAll(navigationPropertiesToLooad).Where(predicate).AsNoTracking();
             var totalCount = query.Count();
-            var items = query/*.OrderBy(orderBy)*/.Skip(startRowIndex).Take(maxRows).ToList();
+            var items = query.OrderBy(orderBy).Skip(startRowIndex).Take(maxRows).ToList();
 
             return new PagedResult<T>(items, totalCount, startRowIndex, maxRows);
         }
@@ -68,7 +69,7 @@ namespace Reusable.Data.Core
         {
             var query = _dbSet.IncludeAll(navigationPropertiesToLoad).AsNoTracking();
             var totalCount = query.Count();
-            var items = query/*.OrderBy()*/.Skip(startRowIndex).Take(maxRows).ToList();
+            var items = query.OrderBy(orderBy).Skip(startRowIndex).Take(maxRows).ToList();
 
             return new PagedResult<T>(items, totalCount, startRowIndex, maxRows);
         }

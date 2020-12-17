@@ -75,3 +75,4 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\ar\CompanyName.AppName.Business.resources.dll
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\en\CompanyName.AppName.Business.resources.dll
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\fr\CompanyName.AppName.Business.resources.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\System.Linq.Dynamic.dll

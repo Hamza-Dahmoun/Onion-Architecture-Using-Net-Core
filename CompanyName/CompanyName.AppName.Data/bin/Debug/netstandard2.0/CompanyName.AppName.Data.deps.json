@@ -22,6 +22,17 @@
           "CompanyName.AppName.Data.dll": {}
         }
       },
+      "Linq.Dynamic/1.0.4": {
+        "dependencies": {
+          "System.Reflection.Emit": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Linq.Dynamic.dll": {
+            "assemblyVersion": "1.0.4.0",
+            "fileVersion": "1.0.4.0"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
         "dependencies": {
           "System.Threading.Tasks.Extensions": "4.5.2"
@@ -1286,6 +1297,7 @@
       },
       "Reusable.Data.Core/1.0.0": {
         "dependencies": {
+          "Linq.Dynamic": "1.0.4",
           "Microsoft.EntityFrameworkCore": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
           "Reusable.Data.Abstractions": "1.0.0",
@@ -1311,6 +1323,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Linq.Dynamic/1.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wwv//2EPGx56vrkJircaCFV++o62M9SNuj5v64BSey451FHvH8n+VDrhDzPL1atMRLbvQlri4hAaXg/6NjQZNQ==",
+      "path": "linq.dynamic/1.0.4",
+      "hashPath": "linq.dynamic.1.0.4.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WdnqKMpc2K8E414opAby5LOBPWuBqeDcI2jjrnY+P5xrlk3KpZWAWzIfv+vq6nDABRHorr/O6cnezq/nkXfI/Q==",
+  "dgSpecHash": "G+WWBvzSj0amrsuX6LEZ4z6/NfNW/dILvkVE/ZMWx2vx2FUZuFNsnCF4cTmBggUqw9uUbRX2JgJx0XXbjqUrlQ==",
   "success": true,
   "projectFilePath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Web\\CompanyName.AppName.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ham.dahmoun\\.nuget\\packages\\linq.dynamic\\1.0.4\\linq.dynamic.1.0.4.nupkg.sha512",
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
