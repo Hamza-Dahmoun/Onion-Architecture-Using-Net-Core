@@ -1,5 +1,5 @@
 ﻿@model Reusable.Domain.Core.PagedResult<CompanyName.AppName.Domain.Entities.City>
-
+@inject CompanyName.AppName.Web.Infrastructure.ApiServicesUrls ApiServicesUrls
 @{
     ViewData["Title"] = labelLocalizer["List of cities"];
 }
@@ -22,33 +22,34 @@
             <th>
                 @labelLocalizer["Description"]
             </th>
-            @*<th></th>*@
+            <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.Items)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Code)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                @*<td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                    </td>*@
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td></td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">@labelLocalizer["Edit"]</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@labelLocalizer["Details"]</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@labelLocalizer["Delete"]</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>
 <partial name="_datatablesScript" />
-<script>
+@*<script>
     $(function () {
         initDataTable("table", "@Url.Action("DataTable")")
     });
@@ -73,6 +74,47 @@
                       var markup =
                         "<a class='btn btn-secondary btn-sm' href=" + '@Url.Action("Edit")/' + row.id + "><i class='fa fa-pencil-alt'></i></a>" + " " +
                         "<a class='btn btn-danger btn-sm' href=" + '@Url.Action("Delete")/' + row.id +"><i class='fa fa-trash'></i></a>";
+                          return markup;
+                        }
+                    }
+            ],
+            });
+        }
+</script>*@
+<script>
+        $(function () {
+            initDataTable("table","@Url.Action("DataTable")")
+        });
+
+        function initDataTable(selector, url) {
+            console.log(url);
+           var dtTable =  $(selector).DataTable({
+            "processing": true,
+            "serverSide": true,
+            "lengthMenu": [[10, 25, 50, 100], [10, 25, 50, 100]],
+               "ajax": {
+                   type: 'POST',
+                url: url,
+                dataType: "json",
+                //contentType: 'application/json',
+                //data: function (d) {
+                //    console.log(d);
+                //    console.log(JSON.stringify(d));
+                //    return JSON.stringify(d);
+                //      }
+                },
+            "columns":
+            [
+                    { "data": "id", "name": "id", "visible": false, "searchable": false },
+                    { "data": "code", "name": "code", "visible": true, "searchable": false },
+                    { "data": "description", "name": "description", "visible": true, "searchable": false },
+                //{ "data": "secteurActivite.designation", "visible": true, "searchable": false },
+                { "data": null, "searchable": false, "sortable": false,
+                  "render": function (data, type, row, meta){
+                      var markup =
+                          "<a class='btn btn-primary btn-sm' title='See details' href=" + '@Url.Action("Details")/' + row.id + ">Details</a>" + " " +
+                        "<a class='btn btn-secondary btn-sm' title='Edit' href=" + '@Url.Action("Edit")/' + row.id + "><i class='fa fa-pencil'></i></a>" + " " +
+                        "<a class='btn btn-danger btn-sm' title='Delete' href=" + '@Url.Action("Delete")/' + row.id +"><i class='fa fa-trash'></i></a>";
                           return markup;
                         }
                     }

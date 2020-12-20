@@ -7,9 +7,9 @@ namespace CompanyName.AppName.Domain.Entities
 {
     public class City:Referentiel
     {
-        [Display(Name="WilayaId")]
+        [Display(Name= "StateId")]
         [Required(ErrorMessage ="RequiredMessage")]
-        public Guid WilayaId { get; set; }
-        public virtual State Wilaya { get; set; }
+        public Guid StateId { get; set; }
+        public virtual State State { get; set; }
     }
 }

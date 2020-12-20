@@ -167,6 +167,7 @@ namespace CompanyName.AppName.Web.Controllers
             {
                 // in this example we just default sort on the 1st column
                 sortBy = model.columns[model.order[0].column].data;
+                if(model.order[0].direction!=null)
                 sortDir = model.order[0].direction.ToLower();
                 orderBy = sortBy + " " + sortDir;
             }
