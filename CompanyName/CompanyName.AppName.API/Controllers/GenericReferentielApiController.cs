@@ -62,7 +62,7 @@ namespace CompanyName.AppName.API.Controllers
         }
 
         [HttpPost]
-        [Route("datatable1")]
+        [Route("datatable1")]       
         public JQueryDataTableRetunedData<T> DataTable([FromBody] DataTableAjaxModel model)
         {
 
