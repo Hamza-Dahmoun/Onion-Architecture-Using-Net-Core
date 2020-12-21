@@ -51,5 +51,34 @@ namespace CompanyName.AppName.Web.Controllers
             }
             return View(person);
         }
+
+
+        [HttpGet("{id}")]
+        public IActionResult Edit(Guid id)
+        {
+            var person = _personBusinessService.GetById(id);
+            return View(person);
+        }
+
+        [HttpPost("{id}")]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Guid id, Person person)
+        {
+            BusinessResult businessResult;
+            if (ModelState.IsValid)
+            {
+                businessResult = _personBusinessService.Update(person);
+                if (businessResult.Succeeded)
+                {
+                    TempData["Message"] = businessResult.ToBootstrapAlerts();
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewData["Message"] = businessResult.ToBootstrapAlerts();
+                }
+            }
+            return View(person);
+        }
     }
 }
