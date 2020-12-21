@@ -19,7 +19,7 @@ namespace CompanyName.AppName.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(_personBusinessService.GetAll());
         }
     }
 }

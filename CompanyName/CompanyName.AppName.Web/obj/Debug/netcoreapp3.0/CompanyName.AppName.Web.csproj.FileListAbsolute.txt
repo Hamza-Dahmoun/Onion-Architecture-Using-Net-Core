@@ -201,3 +201,4 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\State\Index.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\City\Index.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\bin\Debug\netcoreapp3.0\System.Linq.Dynamic.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Person\Index.cshtml.g.cs
