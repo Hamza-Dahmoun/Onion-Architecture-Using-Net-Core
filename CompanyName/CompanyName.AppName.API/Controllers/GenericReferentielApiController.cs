@@ -119,7 +119,7 @@ namespace CompanyName.AppName.API.Controllers
             //'DataTableAjaxModel' as a parameter to get ajax request data parameter ... it didn't work
 
             //lets first get the variables of the request (of the form), and then build the linq query accordingly
-            GetDataTableParametersFromRequest(out int draw1, out int start, out int length, out string searchValue, out string sortColumnName, out string sortColumnDirection);
+            GetDataTableParametersFromRequest(out int draw1, out int start, out int length, out string searchValue, out string orderBy, out string sortColumnName, out string sortColumnDirection);
 
             //Page Size (10, 20, 50,100) 
             int pageSize = length != null ? Convert.ToInt32(length) : 0;
@@ -133,18 +133,18 @@ namespace CompanyName.AppName.API.Controllers
             if (!string.IsNullOrEmpty(searchValue))
             {
                 var result = _referentielBusinessService.GetAllFilteredPaged(x => x.Code.StartsWith(searchValue) || x.Description.Contains(searchValue),
-                    sortColumnName, start, pageSize, _referentielBusinessService.GetDefaultLoadProperties());
+                    orderBy, start, pageSize, _referentielBusinessService.GetDefaultLoadProperties());
                 return new JQueryDataTableRetunedData<T> { draw= draw1, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items };
             }
             else
             {
-                var result = _referentielBusinessService.GetAllPaged(sortColumnName, start, pageSize, _referentielBusinessService.GetDefaultLoadProperties());
+                var result = _referentielBusinessService.GetAllPaged(orderBy, start, pageSize, _referentielBusinessService.GetDefaultLoadProperties());
 
                 return new JQueryDataTableRetunedData<T> { draw = draw1, recordsFiltered = result.TotalCount, recordsTotal = result.TotalCount, data = result.Items };
             }
         }
 
-        protected void GetDataTableParametersFromRequest(out int draw1, out int start, out int length, out string searchValue, out string sortColumnName, out string sortColumnDirection)
+        protected void GetDataTableParametersFromRequest(out int draw1, out int start, out int length, out string searchValue, out string orderBy, out string sortColumnName, out string sortColumnDirection)
         {
             // draw
             // integer Type
@@ -195,6 +195,10 @@ namespace CompanyName.AppName.API.Controllers
 
 
             sortColumnDirection = HttpContext.Request.Form["order[0][dir]"].FirstOrDefault();
+
+
+
+            orderBy = sortColumnName + " " + sortColumnDirection;
         }
     }
 }

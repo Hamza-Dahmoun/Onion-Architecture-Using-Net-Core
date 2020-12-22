@@ -51,12 +51,7 @@
     </tbody>
 </table>
 <partial name="_datatablesScript" />
-<script>
-    $.ajax({
-        method: "GET",
-        url: "http://localhost:63654/api/activity/all"
-    });
-</script>
+
 <script>
         $(function () {
             initDataTable("table","@(ApiServicesUrls.GetDatabableUrl<CompanyName.AppName.Domain.Entities.Activity>())")
