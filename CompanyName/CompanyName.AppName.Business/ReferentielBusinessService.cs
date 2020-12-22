@@ -12,9 +12,9 @@ namespace CompanyName.AppName.Business
     public class ReferentielBusinessService<T, TKey> : GenericBusinessService<T, TKey> where T : Referentiel, IEntity<TKey>
     {
         private readonly IStringLocalizer<BusinessMessage> _businessMessageLoclizer;
-        public ReferentielBusinessService(IUnitOfWork unitOfWork): base(unitOfWork)
+        public ReferentielBusinessService(IStringLocalizer<BusinessMessage> businessMessageLoclizer, IUnitOfWork unitOfWork): base(unitOfWork)
         {
-
+            _businessMessageLoclizer = businessMessageLoclizer;
         }
 
 

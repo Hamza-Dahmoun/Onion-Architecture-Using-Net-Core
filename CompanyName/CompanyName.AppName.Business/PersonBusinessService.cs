@@ -12,9 +12,10 @@ namespace CompanyName.AppName.Business
     {
         private readonly IStringLocalizer<BusinessMessage> _businessMessageLoclizer;
 
-        public PersonBusinessService(IUnitOfWork unitOfWork):base(unitOfWork)
+        public PersonBusinessService(IStringLocalizer<BusinessMessage> businessMessageLoclizer, IUnitOfWork unitOfWork):base(unitOfWork)
         {
-            //read parent class constructor ... it will initialize the properties _unitOfWork and _repository
+            //read parent class constructor ... it will initialize the properties _unitOfWork
+            _businessMessageLoclizer = businessMessageLoclizer;
         }
 
         protected override void OnAdding(Person entity)
