@@ -118,81 +118,78 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Activity" xml:space="preserve">
-    <value>Activity</value>
+    <value>نشاط</value>
   </data>
   <data name="Are you sure you want to delete this?" xml:space="preserve">
-    <value>Are you sure you want to delete this?</value>
+    <value>هل متأكد من عملية الحذف؟</value>
   </data>
   <data name="Back to List" xml:space="preserve">
-    <value>Back to List</value>
+    <value>عودة إلى القائمة</value>
   </data>
   <data name="building Web apps with ASP.NET Core" xml:space="preserve">
-    <value>building Web apps with ASP.NET Core</value>
+    <value>ASP.NET Core تطوير تطبيقات الويب بإستعمال</value>
   </data>
   <data name="Code" xml:space="preserve">
-    <value>Code</value>
+    <value>رمز</value>
   </data>
   <data name="Create" xml:space="preserve">
-    <value>Create</value>
+    <value>اضافة</value>
   </data>
   <data name="Create an Activity" xml:space="preserve">
-    <value>Create an Activity</value>
+    <value>اضافة نشاط</value>
   </data>
   <data name="Create New" xml:space="preserve">
-    <value>Create New</value>
+    <value>اضافة</value>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>حذف</value>
   </data>
   <data name="Delete an Activity" xml:space="preserve">
-    <value>Delete an Activity</value>
+    <value>حذف نشاط</value>
   </data>
   <data name="Description" xml:space="preserve">
-    <value>Description</value>
+    <value>وصف</value>
   </data>
   <data name="Details" xml:space="preserve">
-    <value>Details</value>
+    <value>تفاصيل</value>
   </data>
   <data name="Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>تغيير</value>
   </data>
   <data name="Edit a person information" xml:space="preserve">
-    <value>Edit a person information</value>
+    <value>تحديث معلومات شخص</value>
   </data>
   <data name="Home Page" xml:space="preserve">
-    <value>Home Page</value>
+    <value>الصفحة الرئيسية</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
   </data>
   <data name="Learn about" xml:space="preserve">
-    <value>Learn about</value>
+    <value>تعلم عن</value>
   </data>
   <data name="List of Activities" xml:space="preserve">
-    <value>List of Activities</value>
+    <value>قائمة النشاطات</value>
   </data>
   <data name="List of cities" xml:space="preserve">
-    <value>List of cities</value>
+    <value>قائمة المدن</value>
   </data>
   <data name="List of People" xml:space="preserve">
     <value>قائمة الأشخاص</value>
   </data>
-  <data name="List of People1" xml:space="preserve">
-    <value>List of People</value>
-  </data>
   <data name="List of states" xml:space="preserve">
-    <value>List of states</value>
+    <value>قائمة المقاطعات</value>
   </data>
   <data name="Person" xml:space="preserve">
-    <value>Person</value>
+    <value>شخص</value>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Save</value>
+    <value>حفظ</value>
   </data>
   <data name="State" xml:space="preserve">
-    <value>State</value>
+    <value>مقاطعة</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome</value>
+    <value>مرحبا</value>
   </data>
 </root>
