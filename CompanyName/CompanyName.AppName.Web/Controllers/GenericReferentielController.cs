@@ -81,6 +81,10 @@ namespace CompanyName.AppName.Web.Controllers
 
                     return RedirectToAction(nameof(Index));
                 }
+                else
+                {
+                    ViewData["Message"] = businessResult.ToBootstrapAlerts();
+                }
             }
             return View(model);
         }
@@ -104,10 +108,16 @@ namespace CompanyName.AppName.Web.Controllers
             if (ModelState.IsValid)
             {
                 var businessResult = _referentielBusinessService.Update(model);
+                if (businessResult.Succeeded)
+                {
+                    TempData["Message"] = businessResult.ToBootstrapAlerts();
 
-                TempData["Message"] = businessResult.ToBootstrapAlerts();
-
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }                
+                else
+                {
+                    ViewData["Message"] = businessResult.ToBootstrapAlerts();
+                }
             }
             return View(model);
         }
