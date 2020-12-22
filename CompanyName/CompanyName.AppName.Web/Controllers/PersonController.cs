@@ -80,5 +80,12 @@ namespace CompanyName.AppName.Web.Controllers
             }
             return View(person);
         }
+
+        [HttpGet("{id}")]
+        public IActionResult Details(Guid id)
+        {
+            var person = _personBusinessService.GetById(id);
+            return View(person);
+        }
     }
 }

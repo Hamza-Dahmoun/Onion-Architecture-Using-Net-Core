@@ -204,3 +204,4 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Person\Index.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Person\Create.cshtml.g.cs
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Person\Edit.cshtml.g.cs
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Web\obj\Debug\netcoreapp3.0\Razor\Views\Person\Details.cshtml.g.cs
