@@ -156,6 +156,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Edit</value>
   </data>
+  <data name="Edit a person information" xml:space="preserve">
+    <value>Edit a person information</value>
+  </data>
   <data name="Home Page" xml:space="preserve">
     <value>Home Page</value>
   </data>
@@ -171,8 +174,20 @@
   <data name="List of cities" xml:space="preserve">
     <value>List of cities</value>
   </data>
+  <data name="List of People" xml:space="preserve">
+    <value>قائمة الأشخاص</value>
+  </data>
+  <data name="List of People1" xml:space="preserve">
+    <value>List of People</value>
+  </data>
   <data name="List of states" xml:space="preserve">
     <value>List of states</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="State" xml:space="preserve">
     <value>State</value>

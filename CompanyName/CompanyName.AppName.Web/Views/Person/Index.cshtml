@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<CompanyName.AppName.Domain.Entities.Person>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = @labelLocalizer["List of People"];
 }
 
-<h1>Index</h1>
+<h1>@ViewData["Title"]</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">@labelLocalizer["Create New"]</a>
 </p>
 <table class="table">
     <thead>
@@ -31,9 +31,9 @@
                 @Html.DisplayFor(modelItem => item.LastName)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">@labelLocalizer["Edit"]</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">@labelLocalizer["Details"]</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">@labelLocalizer["Delete"]</a>
             </td>
         </tr>
 }

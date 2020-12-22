@@ -132,6 +132,9 @@
   <data name="Home" xml:space="preserve">
     <value>الرئيسية</value>
   </data>
+  <data name="Person" xml:space="preserve">
+    <value>شخص</value>
+  </data>
   <data name="Privacy" xml:space="preserve">
     <value>الخصوصية</value>
   </data>

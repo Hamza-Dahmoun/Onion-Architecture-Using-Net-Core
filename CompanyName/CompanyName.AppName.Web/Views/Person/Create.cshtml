@@ -1,12 +1,11 @@
 ﻿@model CompanyName.AppName.Domain.Entities.Person
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = @labelLocalizer["Create a Person"];
 }
 
-<h1>Create</h1>
+<h1>@ViewData["Title"]</h1>
 
-<h4>Person</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -23,13 +22,13 @@
                 <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value=@labelLocalizer["Create"] class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">@labelLocalizer["Back to List"]</a>
 </div>
 

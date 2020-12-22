@@ -156,6 +156,9 @@
   <data name="Edit" xml:space="preserve">
     <value>Editer</value>
   </data>
+  <data name="Edit a person information" xml:space="preserve">
+    <value>Modifier les informations d'une personne</value>
+  </data>
   <data name="Home Page" xml:space="preserve">
     <value>Page d'Acceuil</value>
   </data>
@@ -171,8 +174,17 @@
   <data name="List of cities" xml:space="preserve">
     <value>Liste des villes</value>
   </data>
+  <data name="List of People" xml:space="preserve">
+    <value>Listes des Personnes</value>
+  </data>
   <data name="List of states" xml:space="preserve">
     <value>List des wilayas</value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>Personne</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Enregistrer</value>
   </data>
   <data name="State" xml:space="preserve">
     <value>Wilaya</value>

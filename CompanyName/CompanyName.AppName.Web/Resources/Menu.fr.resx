@@ -132,6 +132,9 @@
   <data name="Home" xml:space="preserve">
     <value>Acceuil</value>
   </data>
+  <data name="Person" xml:space="preserve">
+    <value>Personne</value>
+  </data>
   <data name="Privacy" xml:space="preserve">
     <value>Vie Privée</value>
   </data>
