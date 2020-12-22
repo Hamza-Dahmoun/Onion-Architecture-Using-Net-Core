@@ -53,14 +53,14 @@ namespace CompanyName.AppName.Web.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult Edit(Guid id)
         {
             var person = _personBusinessService.GetById(id);
             return View(person);
         }
 
-        [HttpPost("{id}")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Guid id, Person person)
         {
@@ -81,10 +81,37 @@ namespace CompanyName.AppName.Web.Controllers
             return View(person);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet]
         public IActionResult Details(Guid id)
         {
             var person = _personBusinessService.GetById(id);
+            return View(person);
+        }
+
+
+        [HttpGet]
+        public IActionResult Delete(Guid id)
+        {
+            var person =  _personBusinessService.GetById(id);
+            return View(person);
+        }
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public IActionResult Delete(Guid id, Person person)
+        {
+            BusinessResult businessResult;
+            businessResult = _personBusinessService.Delete(person);
+
+            if (businessResult.Succeeded)
+            {
+                TempData["Message"] = businessResult.ToBootstrapAlerts();
+                return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                ViewData["Message"] = businessResult.ToBootstrapAlerts();
+            }
+
             return View(person);
         }
     }
