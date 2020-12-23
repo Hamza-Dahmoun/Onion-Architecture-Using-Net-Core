@@ -11,9 +11,11 @@ namespace CompanyName.AppName.Domain.Entities
         [Required(ErrorMessage="Id is required")]
         public Guid Id { get; set; }
 
+        [Display(Name ="Firstname")]
         [Required(ErrorMessage = "Firstname is equired")]
         public string FirstName { get; set; }
 
+        [Display(Name = "Lastname")]
         [Required(ErrorMessage = "Lastname is equired")]
         public string LastName { get; set; }
     }

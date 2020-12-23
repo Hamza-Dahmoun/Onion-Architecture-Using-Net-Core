@@ -159,11 +159,17 @@
   <data name="Edit a person information" xml:space="preserve">
     <value>Modifier les informations d'une personne</value>
   </data>
+  <data name="Firstname" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
   <data name="Home Page" xml:space="preserve">
     <value>Page d'Acceuil</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
+  </data>
+  <data name="Lastname" xml:space="preserve">
+    <value>Nom</value>
   </data>
   <data name="Learn about" xml:space="preserve">
     <value>Apprendre</value>

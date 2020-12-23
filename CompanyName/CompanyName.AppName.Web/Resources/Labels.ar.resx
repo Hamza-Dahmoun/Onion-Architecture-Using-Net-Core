@@ -159,11 +159,17 @@
   <data name="Edit a person information" xml:space="preserve">
     <value>تحديث معلومات شخص</value>
   </data>
+  <data name="Firstname" xml:space="preserve">
+    <value>الإسم</value>
+  </data>
   <data name="Home Page" xml:space="preserve">
     <value>الصفحة الرئيسية</value>
   </data>
   <data name="Id" xml:space="preserve">
     <value>Id</value>
+  </data>
+  <data name="Lastname" xml:space="preserve">
+    <value>اللقب</value>
   </data>
   <data name="Learn about" xml:space="preserve">
     <value>تعلم عن</value>
