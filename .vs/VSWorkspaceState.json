@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CompanyName",
     "\\CompanyName\\CompanyName.AppName.Web",
     "\\CompanyName\\CompanyName.AppName.Web\\Views",
     "\\CompanyName\\CompanyName.AppName.Web\\Views\\Shared"
   ],
-  "SelectedNode": "\\CompanyName\\CompanyName.AppName.Web\\Views\\Shared\\_Layout.cshtml",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
