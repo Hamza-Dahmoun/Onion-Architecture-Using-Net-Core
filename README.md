@@ -35,4 +35,36 @@ Contains one project ApplicationName.Data it contains the DbContext and the migr
 Consists of two projects  ApplicationName.Api & ApplicationName.Web
 
 
+# How To Use It
+1. Add new models inside Entities folder of CompanyName.AppName.Domain project
+
+2. Do the necessary migrations inside the project CompanyName.AppName.Infrastructure
+
+3. If you need Enumeration type add it inside Enum folder of CompanyName.AppName.Domain project
+
+4. Add BusinessService files of the new models inside CompanyName.AppName.Business project. It is there where you should create your business rules,
+take PromotorBusinessService as an example. New BusinessService files should be registered in Startup file of the Web project before its use.
+
+ Business rules are added inside onAdding() method of BusinessServices files
+
+5. When you need to add a referentiel class it should inherit from Referentiel.cs, and uses ReferentielBusinessService.cs as its business layer
+
+6. We should change AppSettings.ApiBaseUrl inside appsettings.json file according to the host so that the Api calls work correctly
+
+7. Whenever you need to use a business service from Business project inside Api project do not forget to register its service inside Api project startup file
+
+8. Whenever you need to use a business service from Business project inside MVC project do not forget to register its service inside MVC project startup file
+
+9. New messages or labels should be added to ressources files and translated there, then use the translation how it is needed
+
+10. Frontend libraries like bootstrap, fontawesome, jquery are already installed
+
+11. Whenever you need to use fontawesome library load the partialView _fontAwesome
+
+12. Whenever you need to use select2 library load th partialViews _select2Style & _select2Script
+
+13. Whenever you need to use datatables library load the partialViews _datatablesStyle & datatablesScript
+
+
+
 
