@@ -1,0 +1,12 @@
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\bin\Debug\netstandard2.0\ApplicationName.Domain.deps.json
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\bin\Debug\netstandard2.0\ApplicationName.Domain.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\bin\Debug\netstandard2.0\ApplicationName.Domain.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\bin\Debug\netstandard2.0\Reusable.Domain.Core.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\bin\Debug\netstandard2.0\Reusable.Domain.Core.pdb
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\obj\Debug\netstandard2.0\ApplicationName.Domain.csprojAssemblyReference.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\obj\Debug\netstandard2.0\ApplicationName.Domain.AssemblyInfoInputs.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\obj\Debug\netstandard2.0\ApplicationName.Domain.AssemblyInfo.cs
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\obj\Debug\netstandard2.0\ApplicationName.Domain.csproj.CoreCompileInputs.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\obj\Debug\netstandard2.0\ApplicationName.Domain.csproj.CopyComplete
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\obj\Debug\netstandard2.0\ApplicationName.Domain.dll
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.Domain\obj\Debug\netstandard2.0\ApplicationName.Domain.pdb

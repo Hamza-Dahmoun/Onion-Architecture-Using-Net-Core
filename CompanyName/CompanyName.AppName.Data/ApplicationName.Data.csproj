@@ -11,13 +11,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
-    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="5.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CompanyName.AppName.Domain\CompanyName.AppName.Domain.csproj" />
-    <ProjectReference Include="..\Reusable.Business.Core\Reusable.Business.Core.csproj" />
-    <ProjectReference Include="..\Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj" />
+    <ProjectReference Include="..\CompanyName.AppName.Domain\ApplicationName.Domain.csproj" />
+    <ProjectReference Include="..\Reusable.Data.Core\Reusable.Data.Core.csproj" />
     <ProjectReference Include="..\Reusable.Domain.Core\Reusable.Domain.Core.csproj" />
   </ItemGroup>
 

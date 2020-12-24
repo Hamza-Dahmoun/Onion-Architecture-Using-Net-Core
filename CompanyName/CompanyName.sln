@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.AppName.Domain", "CompanyName.AppName.Domain\CompanyName.AppName.Domain.csproj", "{3EAEC6C6-EF51-4ED5-8DB4-94232849A8D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationName.Domain", "CompanyName.AppName.Domain\ApplicationName.Domain.csproj", "{3EAEC6C6-EF51-4ED5-8DB4-94232849A8D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.AppName.Data", "CompanyName.AppName.Data\CompanyName.AppName.Data.csproj", "{899FB6B5-BED1-4A27-86B6-9FD2A50424FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationName.Data", "CompanyName.AppName.Data\ApplicationName.Data.csproj", "{899FB6B5-BED1-4A27-86B6-9FD2A50424FF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.AppName.Business", "CompanyName.AppName.Business\CompanyName.AppName.Business.csproj", "{13C75546-3171-4593-B4FA-3771AC5902D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationName.Business", "CompanyName.AppName.Business\ApplicationName.Business.csproj", "{13C75546-3171-4593-B4FA-3771AC5902D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyName.AppName.Web", "CompanyName.AppName.Web\CompanyName.AppName.Web.csproj", "{3AF6A811-4146-4120-AEE1-9C427B3CB44B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationName.Web", "CompanyName.AppName.Web\ApplicationName.Web.csproj", "{3AF6A811-4146-4120-AEE1-9C427B3CB44B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyName.AppName.API", "CompanyName.AppName.API\CompanyName.AppName.API.csproj", "{0180F89A-6224-44C8-8E1F-5BFEC3729F91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationName.API", "CompanyName.AppName.API\ApplicationName.API.csproj", "{0180F89A-6224-44C8-8E1F-5BFEC3729F91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusable.Data.Abstractions", "Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj", "{C5B61CCB-D29A-407B-87EF-8B2B2A89DF25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reusable.Data.Abstractions", "Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj", "{C5B61CCB-D29A-407B-87EF-8B2B2A89DF25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusable.Data.Core", "Reusable.Data.Core\Reusable.Data.Core.csproj", "{BF9EFACB-00F3-4943-993A-49C4EC61C8E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reusable.Data.Core", "Reusable.Data.Core\Reusable.Data.Core.csproj", "{BF9EFACB-00F3-4943-993A-49C4EC61C8E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusable.Business.Core", "Reusable.Business.Core\Reusable.Business.Core.csproj", "{F9B35405-B315-43D9-BEE1-0A9997E83145}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reusable.Business.Core", "Reusable.Business.Core\Reusable.Business.Core.csproj", "{F9B35405-B315-43D9-BEE1-0A9997E83145}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reusable.Domain.Core", "Reusable.Domain.Core\Reusable.Domain.Core.csproj", "{DE3EE6B8-731F-47CB-862F-E3466F8953BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reusable.Domain.Core", "Reusable.Domain.Core\Reusable.Domain.Core.csproj", "{DE3EE6B8-731F-47CB-862F-E3466F8953BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Core (Reusables)", "Application Core (Reusables)", "{5091485D-AF85-4C9B-8338-3E1D5B3D2A93}"
 EndProject

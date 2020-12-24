@@ -27,8 +27,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj": {
-                "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj"
+              "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj": {
+                "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj"
               },
               "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Core\\Reusable.Data.Core.csproj": {
                 "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Core\\Reusable.Data.Core.csproj"
@@ -89,12 +89,12 @@
         }
       }
     },
-    "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj": {
+    "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj",
-        "projectName": "CompanyName.AppName.Domain",
-        "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj",
+        "projectUniqueName": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj",
+        "projectName": "ApplicationName.Domain",
+        "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj",
         "packagesPath": "C:\\Users\\ham.dahmoun\\.nuget\\packages\\",
         "outputPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\obj\\",
         "projectStyle": "PackageReference",

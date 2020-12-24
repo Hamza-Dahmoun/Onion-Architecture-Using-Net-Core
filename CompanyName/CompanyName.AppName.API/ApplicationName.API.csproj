@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CompanyName.AppName.Business\CompanyName.AppName.Business.csproj" />
-    <ProjectReference Include="..\CompanyName.AppName.Data\CompanyName.AppName.Data.csproj" />
-    <ProjectReference Include="..\CompanyName.AppName.Domain\CompanyName.AppName.Domain.csproj" />
+    <ProjectReference Include="..\CompanyName.AppName.Business\ApplicationName.Business.csproj" />
+    <ProjectReference Include="..\CompanyName.AppName.Data\ApplicationName.Data.csproj" />
+    <ProjectReference Include="..\CompanyName.AppName.Domain\ApplicationName.Domain.csproj" />
     <ProjectReference Include="..\Reusable.Business.Core\Reusable.Business.Core.csproj" />
     <ProjectReference Include="..\Reusable.Data.Abstractions\Reusable.Data.Abstractions.csproj" />
   </ItemGroup>

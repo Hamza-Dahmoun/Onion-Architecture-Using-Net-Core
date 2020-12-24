@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tDcrikdBsEQKvhjZ3+ZlE8rwS7bXpfU/h/iTjkfws9MbTW+5/as+V8kO5gqAxhpE8G90bdqnF123YXMF0GtlCA==",
+  "dgSpecHash": "3XwNkE2eBiwTIcH6de3UPXvGagiEAC3LGHrDj7e3NexBPtHmZXylTmCgEQeFs0L1x+t+MVvo9bnM0mYkcZlkiw==",
   "success": true,
-  "projectFilePath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj",
+  "projectFilePath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

@@ -1729,7 +1729,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "CompanyName.AppName.Domain/1.0.0": {
+      "ApplicationName.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -1739,10 +1739,10 @@
           "System.ComponentModel.Annotations": "4.7.0"
         },
         "compile": {
-          "bin/placeholder/CompanyName.AppName.Domain.dll": {}
+          "bin/placeholder/ApplicationName.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CompanyName.AppName.Domain.dll": {}
+          "bin/placeholder/ApplicationName.Domain.dll": {}
         }
       },
       "Reusable.Data.Abstractions/1.0.0": {
@@ -6321,10 +6321,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "CompanyName.AppName.Domain/1.0.0": {
+    "ApplicationName.Domain/1.0.0": {
       "type": "project",
-      "path": "../CompanyName.AppName.Domain/CompanyName.AppName.Domain.csproj",
-      "msbuildProject": "../CompanyName.AppName.Domain/CompanyName.AppName.Domain.csproj"
+      "path": "../CompanyName.AppName.Domain/ApplicationName.Domain.csproj",
+      "msbuildProject": "../CompanyName.AppName.Domain/ApplicationName.Domain.csproj"
     },
     "Reusable.Data.Abstractions/1.0.0": {
       "type": "project",
@@ -6344,7 +6344,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "CompanyName.AppName.Domain >= 1.0.0",
+      "ApplicationName.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 3.1.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.0",
@@ -6360,9 +6360,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Data\\CompanyName.AppName.Data.csproj",
-      "projectName": "CompanyName.AppName.Data",
-      "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Data\\CompanyName.AppName.Data.csproj",
+      "projectUniqueName": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Data\\ApplicationName.Data.csproj",
+      "projectName": "ApplicationName.Data",
+      "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Data\\ApplicationName.Data.csproj",
       "packagesPath": "C:\\Users\\ham.dahmoun\\.nuget\\packages\\",
       "outputPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -6380,8 +6380,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj": {
-              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\CompanyName.AppName.Domain.csproj"
+            "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj": {
+              "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Domain\\ApplicationName.Domain.csproj"
             },
             "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Core\\Reusable.Data.Core.csproj": {
               "projectPath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\Reusable.Data.Core\\Reusable.Data.Core.csproj"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G+WWBvzSj0amrsuX6LEZ4z6/NfNW/dILvkVE/ZMWx2vx2FUZuFNsnCF4cTmBggUqw9uUbRX2JgJx0XXbjqUrlQ==",
+  "dgSpecHash": "vWzuK9ZfgkC25qimes186gJCjofitvpZtIZfpx0RrOE1ifVdXL8jLQOzCh5NdWJDOe22RQMtMDh4QPp2AFHABw==",
   "success": true,
-  "projectFilePath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Web\\CompanyName.AppName.Web.csproj",
+  "projectFilePath": "D:\\to new laptop\\fcc and others\\Onion Architecture Using Net Core\\Onion-Architecture-Using-Net-Core\\CompanyName\\CompanyName.AppName.Web\\ApplicationName.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\linq.dynamic\\1.0.4\\linq.dynamic.1.0.4.nupkg.sha512",
     "C:\\Users\\ham.dahmoun\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
