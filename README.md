@@ -10,29 +10,29 @@ This architecture is based on four portions:
 
 1. Application Core (Reusable): consists of 4 projects which are reusable components to assure the clean architecture, they are the abstraction:
 
-- Reusable.Data.Abstractions: contains IRepository and IUnitOfWork interfaces.
+- __Reusable.Data.Abstractions__: contains `IRepository` and `IUnitOfWork` interfaces.
 
-- Reusable.Data.Core: contains Repository and UnitOfWork implementations (GenericRepository.cs and UnitOfWork.cs).
+- __Reusable.Data.Core__: contains `Repository` and `UnitOfWork` implementations (`GenericRepository.cs` and `UnitOfWork.cs`).
 
-- Reusable.Business.Core: contains a generic implementation of a business service. (IBusinessService.cs and GenericBusinessService.cs)
+- __Reusable.Business.Core__: contains a generic implementation of a business service. (`IBusinessService.cs` and `GenericBusinessService.cs`)
 
-- Reusable.Domain.Core: contains commonly used interfaces and implementations for Domain entities. (IEntity.cs and PagedResult.cs).
+- __Reusable.Domain.Core__: contains commonly used interfaces and implementations for Domain entities. (`IEntity.cs` and `PagedResult.cs`).
 
 
-These 4 projects are reusable components, they are considered as the starting point of any new application.
+The above 4 projects are reusable components, they are considered as the starting point of any new application.
 
 
 2. Application Domain folder containing 2 Layers: 
 
--	ApplicationName.Domain project assuring Data Access Layer. It contains all Entities (models) and Enumerations type.
+-	__ApplicationName.Domain__ project assuring Data Access Layer. It contains all Entities (models) and Enumerations type.
 
--	ApplicationName.Business projet assuring Business Layer. It contains all BusinessService files and Resources files to localize business messages.
+-	__ApplicationName.Business__ projet assuring Business Layer. It contains all BusinessService files and Resources files to localize business messages.
 
 3. Infrastructure Layer (Infrastructure folder): 
-Contains one project ApplicationName.Data it contains the DbContext and the migrations
+Contains one project __ApplicationName.Data__ it contains the DbContext and the migrations
 
 4. Presentation Layer (Presentation folder): 
-Consists of two projects  ApplicationName.Api & ApplicationName.Web
+Consists of two projects  __ApplicationName.Api__ & __ApplicationName.Web__
 
 
 # How To Use It
@@ -43,9 +43,9 @@ Consists of two projects  ApplicationName.Api & ApplicationName.Web
 3. If you need Enumeration type add it inside Enum folder of CompanyName.AppName.Domain project
 
 4. Add BusinessService files of the new models inside CompanyName.AppName.Business project. It is there where you should create your business rules,
-take PromotorBusinessService as an example. New BusinessService files should be registered in Startup file of the Web project before its use.
-
- Business rules are added inside onAdding() method of BusinessServices files
+take PersonBusinessService as an example. 
+New BusinessService files should be registered in Startup file of the Web project before its use.
+Business rules are added inside onAdding() method of BusinessServices files
 
 5. When you need to add a referentiel class it should inherit from Referentiel.cs, and uses ReferentielBusinessService.cs as its business layer
 

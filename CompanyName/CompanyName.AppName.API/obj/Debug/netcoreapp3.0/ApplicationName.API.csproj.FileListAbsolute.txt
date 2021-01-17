@@ -1,6 +1,5 @@
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\appsettings.Development.json
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\appsettings.json
-D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\ApplicationName.API.exe
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\ApplicationName.API.deps.json
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\bin\Debug\netcoreapp3.0\ApplicationName.API.runtimeconfig.json
@@ -76,3 +75,4 @@ D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architec
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\ApplicationName.API.dll
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\ApplicationName.API.pdb
 D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\ApplicationName.API.genruntimeconfig.cache
+D:\to new laptop\fcc and others\Onion Architecture Using Net Core\Onion-Architecture-Using-Net-Core\CompanyName\CompanyName.AppName.API\obj\Debug\netcoreapp3.0\scopedcss\bundle\ApplicationName.API.styles.css
